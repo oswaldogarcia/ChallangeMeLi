@@ -3,18 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C11865914737CA5868CCE92 /* Pods_Meli1_Meli1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCCAD194B4D7845D0BAA1FC /* Pods_Meli1_Meli1UITests.framework */; };
+		35C9D1DBC9B0FE1A06BE9F06 /* Pods_Meli1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAE520ECE2D451ABFE78BE8 /* Pods_Meli1.framework */; };
+		3F3EACDD27178EF3001AC352 /* SearchProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3EACDC27178EF3001AC352 /* SearchProductTests.swift */; };
+		3F3EACE02718E36B001AC352 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3EACDF2718E36B001AC352 /* ProductDetailViewController.swift */; };
+		3F3EACE32718F386001AC352 /* Int+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3EACE22718F386001AC352 /* Int+extension.swift */; };
 		3F861AD927150CD200FC7373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861AD827150CD200FC7373 /* AppDelegate.swift */; };
-		3F861ADB27150CD200FC7373 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861ADA27150CD200FC7373 /* SceneDelegate.swift */; };
 		3F861ADD27150CD200FC7373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861ADC27150CD200FC7373 /* ViewController.swift */; };
 		3F861AE027150CD200FC7373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F861ADE27150CD200FC7373 /* Main.storyboard */; };
 		3F861AE227150CDD00FC7373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F861AE127150CDD00FC7373 /* Assets.xcassets */; };
 		3F861AE527150CDD00FC7373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F861AE327150CDD00FC7373 /* LaunchScreen.storyboard */; };
-		3F861AF027150CDE00FC7373 /* Meli1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861AEF27150CDE00FC7373 /* Meli1Tests.swift */; };
 		3F861AFB27150CDE00FC7373 /* Meli1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861AFA27150CDE00FC7373 /* Meli1UITests.swift */; };
+		3F861B0A2715135300FC7373 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861B092715135300FC7373 /* Service.swift */; };
+		3F861B0D27152BAB00FC7373 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861B0C27152BAB00FC7373 /* ResultModel.swift */; };
+		3F861B102715E30000FC7373 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861B0F2715E30000FC7373 /* ProductsViewModel.swift */; };
+		3F861B152716175600FC7373 /* SearchProductProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861B142716175500FC7373 /* SearchProductProvider.swift */; };
+		3F861B1727161DE600FC7373 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861B1627161DE600FC7373 /* SceneDelegate.swift */; };
+		3F861B1A2716248400FC7373 /* ProductsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F861B192716248400FC7373 /* ProductsMock.json */; };
+		3F861B1D2716491200FC7373 /* ProductListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861B1B2716491100FC7373 /* ProductListCell.swift */; };
+		3F861B1E2716491200FC7373 /* ProductListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F861B1C2716491200FC7373 /* ProductListCell.xib */; };
+		9927E303EFBA0AAFB77881AC /* Pods_Meli1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4DC018F1F0073648A8B91 /* Pods_Meli1Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +47,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0730F400BD04DF6CCE2CCC4E /* Pods-Meli1-Meli1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meli1-Meli1UITests.release.xcconfig"; path = "Target Support Files/Pods-Meli1-Meli1UITests/Pods-Meli1-Meli1UITests.release.xcconfig"; sourceTree = "<group>"; };
+		1000BAC586F197D083279286 /* Pods-Meli1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meli1.release.xcconfig"; path = "Target Support Files/Pods-Meli1/Pods-Meli1.release.xcconfig"; sourceTree = "<group>"; };
+		3B0AE5424F277ABC7C94EAFD /* Pods-Meli1-Meli1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meli1-Meli1UITests.debug.xcconfig"; path = "Target Support Files/Pods-Meli1-Meli1UITests/Pods-Meli1-Meli1UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F3EACDC27178EF3001AC352 /* SearchProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductTests.swift; sourceTree = "<group>"; };
+		3F3EACDE271791EA001AC352 /* Meli1Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Meli1Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		3F3EACDF2718E36B001AC352 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		3F3EACE22718F386001AC352 /* Int+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+extension.swift"; sourceTree = "<group>"; };
 		3F861AD527150CD200FC7373 /* Meli1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meli1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F861AD827150CD200FC7373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F861ADA27150CD200FC7373 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3F861ADC27150CD200FC7373 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F861ADF27150CD200FC7373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F861AE127150CDD00FC7373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F861AE427150CDD00FC7373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F861AE627150CDD00FC7373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F861AEB27150CDE00FC7373 /* Meli1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Meli1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F861AEF27150CDE00FC7373 /* Meli1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meli1Tests.swift; sourceTree = "<group>"; };
 		3F861AF127150CDE00FC7373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F861AF627150CDE00FC7373 /* Meli1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Meli1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F861AFA27150CDE00FC7373 /* Meli1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meli1UITests.swift; sourceTree = "<group>"; };
 		3F861AFC27150CDE00FC7373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F861B092715135300FC7373 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		3F861B0C27152BAB00FC7373 /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
+		3F861B0F2715E30000FC7373 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		3F861B142716175500FC7373 /* SearchProductProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductProvider.swift; sourceTree = "<group>"; };
+		3F861B1627161DE600FC7373 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3F861B192716248400FC7373 /* ProductsMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductsMock.json; sourceTree = "<group>"; };
+		3F861B1B2716491100FC7373 /* ProductListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductListCell.swift; path = Cell/ProductListCell.swift; sourceTree = "<group>"; };
+		3F861B1C2716491200FC7373 /* ProductListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProductListCell.xib; path = Cell/ProductListCell.xib; sourceTree = "<group>"; };
+		43E4DC018F1F0073648A8B91 /* Pods_Meli1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meli1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49888CB4B5DE0E85506F2D27 /* Pods-Meli1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meli1.debug.xcconfig"; path = "Target Support Files/Pods-Meli1/Pods-Meli1.debug.xcconfig"; sourceTree = "<group>"; };
+		4DC541E7B43EABE24A0E83E0 /* Pods-Meli1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meli1Tests.debug.xcconfig"; path = "Target Support Files/Pods-Meli1Tests/Pods-Meli1Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDCCAD194B4D7845D0BAA1FC /* Pods_Meli1_Meli1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meli1_Meli1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF02A15E69950EA9CC4ECDF9 /* Pods-Meli1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meli1Tests.release.xcconfig"; path = "Target Support Files/Pods-Meli1Tests/Pods-Meli1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FEAE520ECE2D451ABFE78BE8 /* Pods_Meli1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meli1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35C9D1DBC9B0FE1A06BE9F06 /* Pods_Meli1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9927E303EFBA0AAFB77881AC /* Pods_Meli1Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +103,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C11865914737CA5868CCE92 /* Pods_Meli1_Meli1UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30DF27E24E72219EE690BA44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEAE520ECE2D451ABFE78BE8 /* Pods_Meli1.framework */,
+				CDCCAD194B4D7845D0BAA1FC /* Pods_Meli1_Meli1UITests.framework */,
+				43E4DC018F1F0073648A8B91 /* Pods_Meli1Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F3EACE12718F352001AC352 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3F3EACE22718F386001AC352 /* Int+extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3F861ACC27150CD200FC7373 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +135,8 @@
 				3F861AEE27150CDE00FC7373 /* Meli1Tests */,
 				3F861AF927150CDE00FC7373 /* Meli1UITests */,
 				3F861AD627150CD200FC7373 /* Products */,
+				93C9633E30FD1D9AEE2E55A0 /* Pods */,
+				30DF27E24E72219EE690BA44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +153,11 @@
 		3F861AD727150CD200FC7373 /* Meli1 */ = {
 			isa = PBXGroup;
 			children = (
+				3F861B11271616C800FC7373 /* SearchProducts */,
+				3F861B082715132300FC7373 /* Service  */,
+				3F3EACE12718F352001AC352 /* Extensions */,
 				3F861AD827150CD200FC7373 /* AppDelegate.swift */,
-				3F861ADA27150CD200FC7373 /* SceneDelegate.swift */,
-				3F861ADC27150CD200FC7373 /* ViewController.swift */,
+				3F861B1627161DE600FC7373 /* SceneDelegate.swift */,
 				3F861ADE27150CD200FC7373 /* Main.storyboard */,
 				3F861AE127150CDD00FC7373 /* Assets.xcassets */,
 				3F861AE327150CDD00FC7373 /* LaunchScreen.storyboard */,
@@ -113,8 +169,9 @@
 		3F861AEE27150CDE00FC7373 /* Meli1Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3F861AEF27150CDE00FC7373 /* Meli1Tests.swift */,
 				3F861AF127150CDE00FC7373 /* Info.plist */,
+				3F3EACDC27178EF3001AC352 /* SearchProductTests.swift */,
+				3F3EACDE271791EA001AC352 /* Meli1Tests-Bridging-Header.h */,
 			);
 			path = Meli1Tests;
 			sourceTree = "<group>";
@@ -128,6 +185,82 @@
 			path = Meli1UITests;
 			sourceTree = "<group>";
 		};
+		3F861B082715132300FC7373 /* Service  */ = {
+			isa = PBXGroup;
+			children = (
+				3F861B092715135300FC7373 /* Service.swift */,
+			);
+			path = "Service ";
+			sourceTree = "<group>";
+		};
+		3F861B0B27152B8D00FC7373 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F861B0C27152BAB00FC7373 /* ResultModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F861B0E2715E2C900FC7373 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3F861B0F2715E30000FC7373 /* ProductsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F861B11271616C800FC7373 /* SearchProducts */ = {
+			isa = PBXGroup;
+			children = (
+				3F861B182716246A00FC7373 /* Mock */,
+				3F861B132716173400FC7373 /* Provider */,
+				3F861B12271616FD00FC7373 /* View */,
+				3F861B0B27152B8D00FC7373 /* Model */,
+				3F861B0E2715E2C900FC7373 /* ViewModel */,
+			);
+			path = SearchProducts;
+			sourceTree = "<group>";
+		};
+		3F861B12271616FD00FC7373 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F861ADC27150CD200FC7373 /* ViewController.swift */,
+				3F861B1B2716491100FC7373 /* ProductListCell.swift */,
+				3F861B1C2716491200FC7373 /* ProductListCell.xib */,
+				3F3EACDF2718E36B001AC352 /* ProductDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F861B132716173400FC7373 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				3F861B142716175500FC7373 /* SearchProductProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		3F861B182716246A00FC7373 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				3F861B192716248400FC7373 /* ProductsMock.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		93C9633E30FD1D9AEE2E55A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49888CB4B5DE0E85506F2D27 /* Pods-Meli1.debug.xcconfig */,
+				1000BAC586F197D083279286 /* Pods-Meli1.release.xcconfig */,
+				3B0AE5424F277ABC7C94EAFD /* Pods-Meli1-Meli1UITests.debug.xcconfig */,
+				0730F400BD04DF6CCE2CCC4E /* Pods-Meli1-Meli1UITests.release.xcconfig */,
+				4DC541E7B43EABE24A0E83E0 /* Pods-Meli1Tests.debug.xcconfig */,
+				DF02A15E69950EA9CC4ECDF9 /* Pods-Meli1Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F861AFF27150CDE00FC7373 /* Build configuration list for PBXNativeTarget "Meli1" */;
 			buildPhases = (
+				C82FB7A4F5C5A8E644A955B6 /* [CP] Check Pods Manifest.lock */,
 				3F861AD127150CD200FC7373 /* Sources */,
 				3F861AD227150CD200FC7373 /* Frameworks */,
 				3F861AD327150CD200FC7373 /* Resources */,
+				D18A01F8D450AB695CCE526D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +287,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F861B0227150CDE00FC7373 /* Build configuration list for PBXNativeTarget "Meli1Tests" */;
 			buildPhases = (
+				2751C201EDB33E7B4AABE970 /* [CP] Check Pods Manifest.lock */,
 				3F861AE727150CDE00FC7373 /* Sources */,
 				3F861AE827150CDE00FC7373 /* Frameworks */,
 				3F861AE927150CDE00FC7373 /* Resources */,
@@ -170,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F861B0527150CDE00FC7373 /* Build configuration list for PBXNativeTarget "Meli1UITests" */;
 			buildPhases = (
+				B6C3D09AA7E6801E0AFE757F /* [CP] Check Pods Manifest.lock */,
 				3F861AF227150CDE00FC7373 /* Sources */,
 				3F861AF327150CDE00FC7373 /* Frameworks */,
 				3F861AF427150CDE00FC7373 /* Resources */,
+				D44A08927C53FAE975F0E5E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,6 +336,7 @@
 					};
 					3F861AEA27150CDE00FC7373 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 						TestTargetID = 3F861AD427150CD200FC7373;
 					};
 					3F861AF527150CDE00FC7373 = {
@@ -232,8 +371,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F861AE527150CDD00FC7373 /* LaunchScreen.storyboard in Resources */,
+				3F861B1E2716491200FC7373 /* ProductListCell.xib in Resources */,
 				3F861AE227150CDD00FC7373 /* Assets.xcassets in Resources */,
 				3F861AE027150CD200FC7373 /* Main.storyboard in Resources */,
+				3F861B1A2716248400FC7373 /* ProductsMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +394,124 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2751C201EDB33E7B4AABE970 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meli1Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6C3D09AA7E6801E0AFE757F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meli1-Meli1UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C82FB7A4F5C5A8E644A955B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meli1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D18A01F8D450AB695CCE526D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meli1/Pods-Meli1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meli1/Pods-Meli1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Meli1/Pods-Meli1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D44A08927C53FAE975F0E5E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meli1-Meli1UITests/Pods-Meli1-Meli1UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meli1-Meli1UITests/Pods-Meli1-Meli1UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Meli1-Meli1UITests/Pods-Meli1-Meli1UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F861AD127150CD200FC7373 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F861B102715E30000FC7373 /* ProductsViewModel.swift in Sources */,
+				3F861B1727161DE600FC7373 /* SceneDelegate.swift in Sources */,
+				3F3EACE02718E36B001AC352 /* ProductDetailViewController.swift in Sources */,
 				3F861ADD27150CD200FC7373 /* ViewController.swift in Sources */,
+				3F861B0A2715135300FC7373 /* Service.swift in Sources */,
 				3F861AD927150CD200FC7373 /* AppDelegate.swift in Sources */,
-				3F861ADB27150CD200FC7373 /* SceneDelegate.swift in Sources */,
+				3F861B1D2716491200FC7373 /* ProductListCell.swift in Sources */,
+				3F3EACE32718F386001AC352 /* Int+extension.swift in Sources */,
+				3F861B152716175600FC7373 /* SearchProductProvider.swift in Sources */,
+				3F861B0D27152BAB00FC7373 /* ResultModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +519,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F861AF027150CDE00FC7373 /* Meli1Tests.swift in Sources */,
+				3F3EACDD27178EF3001AC352 /* SearchProductTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +684,7 @@
 		};
 		3F861B0027150CDE00FC7373 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49888CB4B5DE0E85506F2D27 /* Pods-Meli1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +704,7 @@
 		};
 		3F861B0127150CDE00FC7373 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1000BAC586F197D083279286 /* Pods-Meli1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,9 +724,11 @@
 		};
 		3F861B0327150CDE00FC7373 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DC541E7B43EABE24A0E83E0 /* Pods-Meli1Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XM44G74FQ7;
 				INFOPLIST_FILE = Meli1Tests/Info.plist;
@@ -485,6 +740,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.osCorp.Meli1Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Meli1Tests/Meli1Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meli1.app/Meli1";
@@ -493,9 +750,11 @@
 		};
 		3F861B0427150CDE00FC7373 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF02A15E69950EA9CC4ECDF9 /* Pods-Meli1Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XM44G74FQ7;
 				INFOPLIST_FILE = Meli1Tests/Info.plist;
@@ -507,6 +766,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.osCorp.Meli1Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Meli1Tests/Meli1Tests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meli1.app/Meli1";
@@ -515,6 +775,7 @@
 		};
 		3F861B0627150CDE00FC7373 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B0AE5424F277ABC7C94EAFD /* Pods-Meli1-Meli1UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +796,7 @@
 		};
 		3F861B0727150CDE00FC7373 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0730F400BD04DF6CCE2CCC4E /* Pods-Meli1-Meli1UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
