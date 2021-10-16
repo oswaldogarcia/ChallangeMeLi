@@ -72,8 +72,8 @@
 		3F861B142716175500FC7373 /* SearchProductProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductProvider.swift; sourceTree = "<group>"; };
 		3F861B1627161DE600FC7373 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3F861B192716248400FC7373 /* ProductsMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductsMock.json; sourceTree = "<group>"; };
-		3F861B1B2716491100FC7373 /* ProductListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductListCell.swift; path = Cell/ProductListCell.swift; sourceTree = "<group>"; };
-		3F861B1C2716491200FC7373 /* ProductListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProductListCell.xib; path = Cell/ProductListCell.xib; sourceTree = "<group>"; };
+		3F861B1B2716491100FC7373 /* ProductListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCell.swift; sourceTree = "<group>"; };
+		3F861B1C2716491200FC7373 /* ProductListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListCell.xib; sourceTree = "<group>"; };
 		43E4DC018F1F0073648A8B91 /* Pods_Meli1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meli1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49888CB4B5DE0E85506F2D27 /* Pods-Meli1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meli1.debug.xcconfig"; path = "Target Support Files/Pods-Meli1/Pods-Meli1.debug.xcconfig"; sourceTree = "<group>"; };
 		4DC541E7B43EABE24A0E83E0 /* Pods-Meli1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meli1Tests.debug.xcconfig"; path = "Target Support Files/Pods-Meli1Tests/Pods-Meli1Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +126,15 @@
 				3F3EACE22718F386001AC352 /* Int+extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3F3EACE4271A41FD001AC352 /* ProductCell */ = {
+			isa = PBXGroup;
+			children = (
+				3F861B1B2716491100FC7373 /* ProductListCell.swift */,
+				3F861B1C2716491200FC7373 /* ProductListCell.xib */,
+			);
+			path = ProductCell;
 			sourceTree = "<group>";
 		};
 		3F861ACC27150CD200FC7373 = {
@@ -224,9 +233,8 @@
 		3F861B12271616FD00FC7373 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3F3EACE4271A41FD001AC352 /* ProductCell */,
 				3F861ADC27150CD200FC7373 /* ViewController.swift */,
-				3F861B1B2716491100FC7373 /* ProductListCell.swift */,
-				3F861B1C2716491200FC7373 /* ProductListCell.xib */,
 				3F3EACDF2718E36B001AC352 /* ProductDetailViewController.swift */,
 			);
 			path = View;

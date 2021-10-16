@@ -12,6 +12,10 @@ import RxCocoa
 
 class ProductsViewModel{
     
+    deinit {
+        print("ProductsViewModel deinit")
+    }
+    
     private var productsProvider : SearchProductProviderProtocol
    
     

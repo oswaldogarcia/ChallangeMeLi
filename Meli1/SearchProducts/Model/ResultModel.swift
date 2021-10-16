@@ -29,7 +29,7 @@ struct ResultModel: Codable {
 //    var address: Address?
 //    var shipping: Shipping?
 //    var sellerAddress: SellerAddress?
-//    var attributes: [Attribute]?
+    var attributes: [Attribute]?
 //    var differentialPricing: DifferentialPricing?
 //    var originalPrice: Int?
 //    var categoryID: String?
@@ -59,7 +59,7 @@ struct ResultModel: Codable {
 //        case acceptsMercadopago = "accepts_mercadopago"
 //        case installments, address, shipping
 //        case sellerAddress = "seller_address"
-//        case attributes
+        case attributes
 //        case differentialPricing = "differential_pricing"
 //        case originalPrice = "original_price"
 //        case categoryID = "category_id"

@@ -24,10 +24,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.productsListTableView.delegate = self
         self.registerNib()
         self.bindData()
         self.subscriptionData()
         self.activityIndicatorActive(false)
+    }
+    
+    deinit {
+        print("ViewController deinit")
     }
     
     func registerNib(){
@@ -47,22 +52,22 @@ class ViewController: UIViewController {
     
     private func subscriptionData(){
         
-        self.productsSearchBar.searchTextField.rx.controlEvent([.editingDidEndOnExit])            .subscribe(onNext: {_ in
-            let query = self.productsSearchBar.text ?? ""
-            self.view.endEditing(true)
-            self.products.accept([])
+        self.productsSearchBar.searchTextField.rx.controlEvent([.editingDidEndOnExit])            .subscribe(onNext: { [weak self] _ in
+            let query = self?.productsSearchBar.text ?? ""
+            self?.view.endEditing(true)
+            self?.products.accept([])
             if query != ""{
-                self.activityIndicatorActive(true)
-                self.getProducts(query)
+                self?.activityIndicatorActive(true)
+                self?.getProducts(query)
             }
         }).disposed(by: self.disposeBag)
         
         self.productsListTableView.rx.modelSelected(ResultModel.self)
-            .subscribe(onNext: { product in
+            .subscribe(onNext: { [weak self] product in
                 
-                let vc = (self.storyboard?.instantiateViewController(identifier: "ProductDetailViewController"))!  as  ProductDetailViewController
+                let vc = (self?.storyboard?.instantiateViewController(identifier: "ProductDetailViewController"))!  as  ProductDetailViewController
                 vc.product = product
-                self.navigationController?.pushViewController(vc , animated: true)
+                self?.navigationController?.pushViewController(vc , animated: true)
             
         }).disposed(by: self.disposeBag)
 
@@ -71,9 +76,9 @@ class ViewController: UIViewController {
     
     
     private func getProducts(_ query:String){
-        self.viewModel.getProducts(query).subscribe( onNext: { (products) in
-            self.products.accept(products)
-            self.activityIndicatorActive(false)
+        self.viewModel.getProducts(query).subscribe( onNext: { [weak self] (products) in
+            self?.products.accept(products)
+            self?.activityIndicatorActive(false)
         }).disposed(by: self.disposeBag)
     }
     

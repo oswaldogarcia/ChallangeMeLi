@@ -33,4 +33,8 @@ class ProductListCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    deinit {
+        print("ProductListCell deinit")
+    }
+    
 }
