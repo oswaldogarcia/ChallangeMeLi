@@ -27,7 +27,7 @@ struct ResultModel: Codable {
 //    var acceptsMercadopago: Bool?
 //    var installments: Installments?
 //    var address: Address?
-//    var shipping: Shipping?
+    var shipping: Shipping?
 //    var sellerAddress: SellerAddress?
     var attributes: [Attribute]?
 //    var differentialPricing: DifferentialPricing?
@@ -57,7 +57,8 @@ struct ResultModel: Codable {
         case thumbnail
 //        case thumbnailID = "thumbnail_id"
 //        case acceptsMercadopago = "accepts_mercadopago"
-//        case installments, address, shipping
+//        case installments, address,
+        case shipping
 //        case sellerAddress = "seller_address"
         case attributes
 //        case differentialPricing = "differential_pricing"

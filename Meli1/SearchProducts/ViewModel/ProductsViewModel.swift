@@ -8,13 +8,14 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import UIKit
 
 
 class ProductsViewModel{
     
-    deinit {
-        print("ProductsViewModel deinit")
-    }
+    var query = BehaviorRelay<String>(value: "")
+    var products = BehaviorRelay<[ResultModel]>(value: [])
+    var disposeBag = DisposeBag()
     
     private var productsProvider : SearchProductProviderProtocol
    
@@ -24,9 +25,21 @@ class ProductsViewModel{
     }
     
      func getProducts(_ q:String)  -> Observable<[ResultModel]>  {
-        
-        return productsProvider.getProducts(q)
-        
+        let parameters =  ["q": q,"offset":50] as [String : Any]
+        return productsProvider.getProducts(parameters)
      }
+    
+    func searchProduct(){
+        
+        let query = self.query.value
+        
+        self.products.accept([])
+        if query != ""{
+            self.getProducts(query).subscribe( onNext: { [weak self] (products) in
+                self?.products.accept(products)
+            }).disposed(by: self.disposeBag)
+        }
+        
+    }
    
 }

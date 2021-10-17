@@ -16,11 +16,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var productsSearchBar: UISearchBar!
     @IBOutlet weak var productsListTableView: UITableView!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var logoImage: UIImageView!
     
-    var products = BehaviorRelay<[ResultModel]>(value: [])
-    var disposeBag = DisposeBag()
+   
     var viewModel = ProductsViewModel()
+    var disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,9 @@ class ViewController: UIViewController {
         self.registerNib()
         self.bindData()
         self.subscriptionData()
-        self.activityIndicatorActive(false)
+        
+        
+        self.title = "Consigue tu producto"
     }
     
     deinit {
@@ -44,7 +46,7 @@ class ViewController: UIViewController {
     
     private func bindData(){
         
-        self.products.bind(to:self.productsListTableView.rx.items(cellIdentifier: "ProductListCell", cellType: ProductListCell.self)){row,product,cell in
+        self.viewModel.products.bind(to:self.productsListTableView.rx.items(cellIdentifier: "ProductListCell", cellType: ProductListCell.self)){row,product,cell in
             cell.configureCell(product)
         }.disposed(by: self.disposeBag)
         
@@ -55,12 +57,15 @@ class ViewController: UIViewController {
         self.productsSearchBar.searchTextField.rx.controlEvent([.editingDidEndOnExit])            .subscribe(onNext: { [weak self] _ in
             let query = self?.productsSearchBar.text ?? ""
             self?.view.endEditing(true)
-            self?.products.accept([])
-            if query != ""{
-                self?.activityIndicatorActive(true)
-                self?.getProducts(query)
-            }
+            
+            self?.title = query != "" ? query : "Consigue tu producto"
+            self?.viewModel.query.accept(query)
+            self?.viewModel.searchProduct()
+            
+            self?.logoImage.isHidden = query != ""
+            
         }).disposed(by: self.disposeBag)
+        
         
         self.productsListTableView.rx.modelSelected(ResultModel.self)
             .subscribe(onNext: { [weak self] product in
@@ -70,29 +75,20 @@ class ViewController: UIViewController {
                 self?.navigationController?.pushViewController(vc , animated: true)
             
         }).disposed(by: self.disposeBag)
+        
+        self.productsListTableView.rx.didScroll.subscribe(onNext:{ [weak self] _ in
+            guard let self = self else { return }
+            let offSetY = self.productsListTableView.contentOffset.y
+            let contentHeight = self.productsListTableView.contentSize.height
+
+            if offSetY > (contentHeight - self.productsListTableView.frame.size.height - 100) {
+                //self.viewModel.fetchMoreDatas.onNext(())
+            }
+        }).disposed(by: self.disposeBag)
 
     }
     
     
-    
-    private func getProducts(_ query:String){
-        self.viewModel.getProducts(query).subscribe( onNext: { [weak self] (products) in
-            self?.products.accept(products)
-            self?.activityIndicatorActive(false)
-        }).disposed(by: self.disposeBag)
-    }
-    
-    private func activityIndicatorActive(_ active: Bool){
-        if active {
-            self.activityIndicator.isHidden = false
-            self.activityIndicator.startAnimating()
-        }else{
-            self.activityIndicator.isHidden = true
-            self.activityIndicator.stopAnimating()
-        }
-        
-        
-    }
     
 }
 

@@ -7,7 +7,6 @@ target 'Meli1' do
 	pod 'Moya/RxSwift'
   pod 'RxCocoa'
   pod 'Kingfisher'
-  pod 'IQKeyboardManagerSwift'
 
   # Pods for Meli1
 

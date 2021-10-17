@@ -9,13 +9,14 @@ import Foundation
 import Moya
 import RxSwift
 import Alamofire
+import UIKit
 
 
 let provider = MoyaProvider<Service>()
 var disposeBag = DisposeBag()
 
 enum Service {
-    case searchProduct(product:String)
+    case searchProduct(parameters:[String : Any])
 }
 
 // MARK: - TargetType Protocol Implementation
@@ -41,8 +42,8 @@ extension Service: TargetType {
     
     var task: Task {
         switch self {
-        case .searchProduct(let product):
-            return .requestParameters(parameters:["q": product], encoding: URLEncoding.queryString)
+        case .searchProduct(let parameters):
+            return .requestParameters(parameters:parameters, encoding: URLEncoding.queryString)
         }
     }
 
@@ -54,24 +55,39 @@ extension Service: TargetType {
     static func requestService<T: Codable>(service:Service,model:T) -> Observable<T> {
         
         return Observable<T>.create { (observer) -> Disposable in
-            
-            print(service.path)
+            UIApplication.shared.activityStartAnimating()
             provider.rx.request(service).subscribe { result in
                 switch result {
                 case let .success(response):
-                    
-                    
+                    print(response.request!)
+                    switch response.statusCode {
+                    case 200...299:
                         let path = "results"
-                        
                         if let model = try? response.map(T.self, atKeyPath: path, using: JSONDecoder.init(), failsOnEmptyData: false) {
-                            
+                            UIApplication.shared.activityStopAnimating()
                             observer.onNext(model)
                             observer.onCompleted()
                         }else {
-                            print("model fail")
+                            print("Error: Something fail creating the model")
+                            UIApplication.shared.activityStopAnimating()
                         }
+                    default:
+                        if let model = try? response.map(RequestErrorModel.self, using: JSONDecoder.init(), failsOnEmptyData: false) {
+                            UIApplication.shared.activityStopAnimating()
+                            UIApplication.shared.showErrorAlert(model.message ?? "",title: model.error ?? "Error")
+                            
+                        }else {
+                            print("Error: Something fail creating the error model")
+                            UIApplication.shared.activityStopAnimating()
+                        }
+                        
+                        print("Error: \(response.statusCode)")
+                    }
+                        
                     
                 case let .failure(error):
+                    UIApplication.shared.activityStopAnimating()
+                    UIApplication.shared.showErrorAlert(error.localizedDescription)
                     
                     print(error)
                     observer.onError(error)

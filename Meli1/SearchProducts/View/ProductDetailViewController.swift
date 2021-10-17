@@ -50,7 +50,7 @@ class ProductDetailViewController: UIViewController {
             
             let attrNameLabel = UILabel(frame: attributeFrame)
             attrNameLabel.backgroundColor = attributeBackgroundColor
-            attrNameLabel.text = attr.name ?? ""
+            attrNameLabel.text = " \(attr.name ?? ""):"
             
             let attrValueLabel = UILabel(frame: attributeFrame)
             attrValueLabel.backgroundColor = attributeBackgroundColor
@@ -74,21 +74,13 @@ class ProductDetailViewController: UIViewController {
         
         attributesStack.layer.borderWidth = 1.0
         attributesStack.layer.borderColor = UIColor.systemGray5.cgColor
-        attributesStack.layer.cornerRadius = 10.0
+        attributesStack.layer.cornerRadius = 5.0
+       
         self.attributesView.addSubview(attributesStack)
         
        
         
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -14,6 +14,9 @@ class ProductListCell: UITableViewCell {
     @IBOutlet weak var productNameLabel: UILabel!
     
     @IBOutlet weak var productPriceLabel: UILabel!
+    @IBOutlet weak var freeShippingLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,17 +27,9 @@ class ProductListCell: UITableViewCell {
         self.productNameLabel.text = product.title        
         self.productImage.kf.setImage(with:URL(string: product.thumbnail ?? ""))
         self.productPriceLabel.text = product.price?.asCurrencyString()
-
+        self.freeShippingLabel.isHidden = !(product.shipping?.freeShipping ?? false) 
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
-    deinit {
-        print("ProductListCell deinit")
-    }
     
 }

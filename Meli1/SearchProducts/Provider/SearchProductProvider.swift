@@ -11,18 +11,19 @@ import RxSwift
 
 
 protocol SearchProductProviderProtocol {
-    func getProducts(_ q:String) -> Observable<[ResultModel]>
+    func getProducts(_ parameters: [String : Any]) -> Observable<[ResultModel]>
 }
 
 
 class SearchProductProvider: SearchProductProviderProtocol {
-    func getProducts(_ q: String) -> Observable<[ResultModel]> {
-        return Service.requestService(service: .searchProduct(product: q), model:[ResultModel()])
+    
+    func getProducts(_ parameters: [String : Any]) -> Observable<[ResultModel]> {
+        return Service.requestService(service: .searchProduct(parameters:parameters), model:[ResultModel()])
     }
 }
 
 class SearchProductProviderMock: SearchProductProviderProtocol {
-    func getProducts(_ q: String) -> Observable<[ResultModel]> {
+    func getProducts(_ parameters: [String : Any]) -> Observable<[ResultModel]> {
         
         return Observable<[ResultModel]>.create { (observer) -> Disposable in
             
