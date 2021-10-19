@@ -11,14 +11,14 @@ import RxSwift
 
 
 
-class ViewController: UIViewController {
+class ProductsListViewController: UIViewController {
     
     
     @IBOutlet weak var productsSearchBar: UISearchBar!
     @IBOutlet weak var productsListTableView: UITableView!
     @IBOutlet weak var logoImage: UIImageView!
     
-   
+    var isCalling = false
     var viewModel = ProductsViewModel()
     var disposeBag = DisposeBag()
     
@@ -31,10 +31,6 @@ class ViewController: UIViewController {
         
         
         self.title = "Consigue tu producto"
-    }
-    
-    deinit {
-        print("ViewController deinit")
     }
     
     func registerNib(){
@@ -59,15 +55,19 @@ class ViewController: UIViewController {
             self?.view.endEditing(true)
             
             self?.title = query != "" ? query : "Consigue tu producto"
-            self?.viewModel.query.accept(query)
-            self?.viewModel.searchProduct()
-            
+            if query != "" {
+                self?.viewModel.query.onNext(query)
+                self?.viewModel.paging.onNext(Paging())
+                self?.viewModel.getProducts.onNext(())
+            }else{
+                self?.viewModel.products.accept([])
+            }
             self?.logoImage.isHidden = query != ""
             
         }).disposed(by: self.disposeBag)
         
         
-        self.productsListTableView.rx.modelSelected(ResultModel.self)
+        self.productsListTableView.rx.modelSelected(ProductModel.self)
             .subscribe(onNext: { [weak self] product in
                 
                 let vc = (self?.storyboard?.instantiateViewController(identifier: "ProductDetailViewController"))!  as  ProductDetailViewController
@@ -81,19 +81,22 @@ class ViewController: UIViewController {
             let offSetY = self.productsListTableView.contentOffset.y
             let contentHeight = self.productsListTableView.contentSize.height
 
-            if offSetY > (contentHeight - self.productsListTableView.frame.size.height - 100) {
-                //self.viewModel.fetchMoreDatas.onNext(())
+            if offSetY >= (contentHeight - self.productsListTableView.frame.size.height) {
+                if !self.viewModel.isCalling.value{
+                    self.viewModel.getProducts.onNext(())
+                    self.viewModel.isCalling.accept(true)
+                }
             }
         }).disposed(by: self.disposeBag)
 
+        
+    
     }
-    
-    
     
 }
 
 // MARK: - UITableViewDelegate
-extension ViewController: UITableViewDelegate {
+extension ProductsListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         

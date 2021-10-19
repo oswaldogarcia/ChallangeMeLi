@@ -1,284 +1,291 @@
-[
-    {
-        "id": "MLA866888977",
-        "site_id": "MLA",
-        "title": "Motorola G6 Play Bueno Dorado Liberado",
-        "seller": {
-            "id": 304248120,
-            "permalink": "http://perfil.mercadolibre.com.ar/ZELUCASH+ARG",
-            "registration_date": "2018-02-25T12:09:37.000-04:00",
-            "car_dealer": false,
-            "real_estate_agency": false,
-            "tags": [
-                "normal",
-                "credits_profile",
-                "messages_as_seller"
-            ],
-            "seller_reputation": {
-                "power_seller_status": null,
-                "real_level": "orange",
-                "level_id": "5_green",
-                "protection_end_date": "2021-10-13T23:59:00.000-04:00",
-                "metrics": {
-                    "cancellations": {
-                        "excluded": {
-                            "real_value": 29,
-                            "real_rate": 0.0103
-                        },
-                        "period": "60 days",
-                        "rate": 0,
-                        "value": 0
-                    },
-                    "claims": {
-                        "excluded": {
-                            "real_value": 129,
-                            "real_rate": 0.046
-                        },
-                        "period": "60 days",
-                        "rate": 0,
-                        "value": 0
-                    },
-                    "delayed_handling_time": {
-                        "excluded": {
-                            "real_value": 86,
-                            "real_rate": 0.0333
-                        },
-                        "period": "60 days",
-                        "rate": 0,
-                        "value": 0
-                    },
-                    "sales": {
-                        "period": "60 days",
-                        "completed": 2424
-                    }
-                },
-                "transactions": {
-                    "canceled": 2227,
-                    "period": "historic",
-                    "total": 14431,
-                    "ratings": {
-                        "negative": 0.06,
-                        "neutral": 0.03,
-                        "positive": 0.91
-                    },
-                    "completed": 12204
-                }
-            }
-        },
-        "price": 23799,
-        "prices": {
+{
+    "paging": {
+        "total": 1,
+        "primary_results": 1,
+        "offset": 0,
+        "limit": 50
+    },
+    "results": [
+        {
             "id": "MLA866888977",
-            "prices": [
-                {
-                    "id": "37",
-                    "type": "standard",
-                    "amount": 23799,
-                    "regular_amount": null,
-                    "currency_id": "ARS",
-                    "last_updated": "2021-10-08T12:31:23Z",
-                    "conditions": {
-                        "context_restrictions": [],
-                        "start_time": null,
-                        "end_time": null,
-                        "eligible": true
+            "site_id": "MLA",
+            "title": "Motorola G6 Play Bueno Dorado Liberado",
+            "seller": {
+                "id": 304248120,
+                "permalink": "http://perfil.mercadolibre.com.ar/ZELUCASH+ARG",
+                "registration_date": "2018-02-25T12:09:37.000-04:00",
+                "car_dealer": false,
+                "real_estate_agency": false,
+                "tags": [
+                    "normal",
+                    "credits_profile",
+                    "messages_as_seller"
+                ],
+                "seller_reputation": {
+                    "power_seller_status": null,
+                    "real_level": "orange",
+                    "level_id": "5_green",
+                    "protection_end_date": "2021-10-13T23:59:00.000-04:00",
+                    "metrics": {
+                        "cancellations": {
+                            "excluded": {
+                                "real_value": 29,
+                                "real_rate": 0.0103
+                            },
+                            "period": "60 days",
+                            "rate": 0,
+                            "value": 0
+                        },
+                        "claims": {
+                            "excluded": {
+                                "real_value": 129,
+                                "real_rate": 0.046
+                            },
+                            "period": "60 days",
+                            "rate": 0,
+                            "value": 0
+                        },
+                        "delayed_handling_time": {
+                            "excluded": {
+                                "real_value": 86,
+                                "real_rate": 0.0333
+                            },
+                            "period": "60 days",
+                            "rate": 0,
+                            "value": 0
+                        },
+                        "sales": {
+                            "period": "60 days",
+                            "completed": 2424
+                        }
                     },
-                    "exchange_rate_context": "DEFAULT",
-                    "metadata": {}
+                    "transactions": {
+                        "canceled": 2227,
+                        "period": "historic",
+                        "total": 14431,
+                        "ratings": {
+                            "negative": 0.06,
+                            "neutral": 0.03,
+                            "positive": 0.91
+                        },
+                        "completed": 12204
+                    }
                 }
-            ],
-            "presentation": {
-                "display_currency": "ARS"
             },
-            "payment_method_prices": [],
-            "reference_prices": [
+            "price": 23799,
+            "prices": {
+                "id": "MLA866888977",
+                "prices": [
+                    {
+                        "id": "37",
+                        "type": "standard",
+                        "amount": 23799,
+                        "regular_amount": null,
+                        "currency_id": "ARS",
+                        "last_updated": "2021-10-08T12:31:23Z",
+                        "conditions": {
+                            "context_restrictions": [],
+                            "start_time": null,
+                            "end_time": null,
+                            "eligible": true
+                        },
+                        "exchange_rate_context": "DEFAULT",
+                        "metadata": {}
+                    }
+                ],
+                "presentation": {
+                    "display_currency": "ARS"
+                },
+                "payment_method_prices": [],
+                "reference_prices": [
+                    {
+                        "id": "35",
+                        "type": "was",
+                        "conditions": {
+                            "context_restrictions": [
+                                "channel_marketplace"
+                            ],
+                            "start_time": "2021-10-06T22:20:46Z",
+                            "end_time": "2021-10-13T22:20:46Z",
+                            "eligible": true
+                        },
+                        "amount": 22599,
+                        "currency_id": "ARS",
+                        "exchange_rate_context": "DEFAULT",
+                        "tags": [],
+                        "last_updated": "2021-10-06T22:20:46Z"
+                    }
+                ],
+                "purchase_discounts": []
+            },
+            "sale_price": null,
+            "currency_id": "ARS",
+            "available_quantity": 1,
+            "sold_quantity": 25,
+            "buying_mode": "buy_it_now",
+            "listing_type_id": "gold_pro",
+            "stop_time": "2040-07-02T04:00:00.000Z",
+            "condition": "new",
+            "permalink": "https://articulo.mercadolibre.com.ar/MLA-866888977-motorola-g6-play-bueno-dorado-liberado-_JM",
+            "thumbnail": "http://http2.mlstatic.com/D_820804-MLA42536665330_072020-O.jpg",
+            "thumbnail_id": "820804-MLA42536665330_072020",
+            "accepts_mercadopago": true,
+            "installments": {
+                "quantity": 9,
+                "amount": 2644.33,
+                "rate": 0,
+                "currency_id": "ARS"
+            },
+            "address": {
+                "state_id": "AR-C",
+                "state_name": "Capital Federal",
+                "city_id": "TUxBQk1PTjUxOTJa",
+                "city_name": "Monserrat"
+            },
+            "shipping": {
+                "free_shipping": true,
+                "mode": "me2",
+                "tags": [
+                    "self_service_in",
+                    "mandatory_free_shipping"
+                ],
+                "logistic_type": "cross_docking",
+                "store_pick_up": false
+            },
+            "seller_address": {
+                "id": "",
+                "comment": "",
+                "address_line": "",
+                "zip_code": "",
+                "country": {
+                    "id": "AR",
+                    "name": "Argentina"
+                },
+                "state": {
+                    "id": "AR-C",
+                    "name": "Capital Federal"
+                },
+                "city": {
+                    "id": "TUxBQk1PTjUxOTJa",
+                    "name": "Monserrat"
+                },
+                "latitude": "",
+                "longitude": ""
+            },
+            "attributes": [
                 {
-                    "id": "35",
-                    "type": "was",
-                    "conditions": {
-                        "context_restrictions": [
-                            "channel_marketplace"
-                        ],
-                        "start_time": "2021-10-06T22:20:46Z",
-                        "end_time": "2021-10-13T22:20:46Z",
-                        "eligible": true
-                    },
-                    "amount": 22599,
-                    "currency_id": "ARS",
-                    "exchange_rate_context": "DEFAULT",
-                    "tags": [],
-                    "last_updated": "2021-10-06T22:20:46Z"
+                    "value_id": "2503",
+                    "attribute_group_name": "Otros",
+                    "source": 1138849081739375,
+                    "attribute_group_id": "OTHERS",
+                    "id": "BRAND",
+                    "name": "Marca",
+                    "value_name": "Motorola",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "struct": null,
+                            "source": 1138849081739375,
+                            "id": "2503",
+                            "name": "Motorola"
+                        }
+                    ]
+                },
+                {
+                    "name": "Condición del ítem",
+                    "value_id": "2230582",
+                    "attribute_group_name": "Otros",
+                    "id": "ITEM_CONDITION",
+                    "value_name": "Reacondicionado",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "2230582",
+                            "name": "Reacondicionado",
+                            "struct": null,
+                            "source": 1138849081739375
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "source": 1138849081739375
+                },
+                {
+                    "attribute_group_name": "Otros",
+                    "name": "Línea",
+                    "value_id": "3073863",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "3073863",
+                            "name": "Moto G",
+                            "struct": null,
+                            "source": 1000427007642219
+                        }
+                    ],
+                    "id": "LINE",
+                    "value_name": "Moto G",
+                    "attribute_group_id": "OTHERS",
+                    "source": 1000427007642219
+                },
+                {
+                    "value_id": "2876818",
+                    "value_name": "G6 Play",
+                    "values": [
+                        {
+                            "id": "2876818",
+                            "name": "G6 Play",
+                            "struct": null,
+                            "source": 1138849081739375
+                        }
+                    ],
+                    "source": 1138849081739375,
+                    "name": "Modelo",
+                    "value_struct": null,
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros",
+                    "id": "MODEL"
+                },
+                {
+                    "source": 1183438784296846,
+                    "id": "PROCESSOR_MODEL",
+                    "value_id": "2087990",
+                    "value_name": "Snapdragon 430",
+                    "value_struct": null,
+                    "name": "Modelo del procesador",
+                    "values": [
+                        {
+                            "id": "2087990",
+                            "name": "Snapdragon 430",
+                            "struct": null,
+                            "source": 1183438784296846
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
                 }
             ],
-            "purchase_discounts": []
-        },
-        "sale_price": null,
-        "currency_id": "ARS",
-        "available_quantity": 1,
-        "sold_quantity": 25,
-        "buying_mode": "buy_it_now",
-        "listing_type_id": "gold_pro",
-        "stop_time": "2040-07-02T04:00:00.000Z",
-        "condition": "new",
-        "permalink": "https://articulo.mercadolibre.com.ar/MLA-866888977-motorola-g6-play-bueno-dorado-liberado-_JM",
-        "thumbnail": "http://http2.mlstatic.com/D_820804-MLA42536665330_072020-O.jpg",
-        "thumbnail_id": "820804-MLA42536665330_072020",
-        "accepts_mercadopago": true,
-        "installments": {
-            "quantity": 9,
-            "amount": 2644.33,
-            "rate": 0,
-            "currency_id": "ARS"
-        },
-        "address": {
-            "state_id": "AR-C",
-            "state_name": "Capital Federal",
-            "city_id": "TUxBQk1PTjUxOTJa",
-            "city_name": "Monserrat"
-        },
-        "shipping": {
-            "free_shipping": true,
-            "mode": "me2",
+            "differential_pricing": {
+                "id": 35713248
+            },
+            "original_price": null,
+            "category_id": "MLA1055",
+            "official_store_id": null,
+            "domain_id": "MLA-CELLPHONES",
+            "catalog_product_id": "MLA9413721",
             "tags": [
-                "self_service_in",
-                "mandatory_free_shipping"
+                "brand_verified",
+                "good_quality_picture",
+                "good_quality_thumbnail",
+                "loyalty_discount_eligible",
+                "immediate_payment",
+                "shipping_guaranteed"
             ],
-            "logistic_type": "cross_docking",
-            "store_pick_up": false
-        },
-        "seller_address": {
-            "id": "",
-            "comment": "",
-            "address_line": "",
-            "zip_code": "",
-            "country": {
-                "id": "AR",
-                "name": "Argentina"
-            },
-            "state": {
-                "id": "AR-C",
-                "name": "Capital Federal"
-            },
-            "city": {
-                "id": "TUxBQk1PTjUxOTJa",
-                "name": "Monserrat"
-            },
-            "latitude": "",
-            "longitude": ""
-        },
-        "attributes": [
-            {
-                "value_id": "2503",
-                "attribute_group_name": "Otros",
-                "source": 1138849081739375,
-                "attribute_group_id": "OTHERS",
-                "id": "BRAND",
-                "name": "Marca",
-                "value_name": "Motorola",
-                "value_struct": null,
-                "values": [
-                    {
-                        "struct": null,
-                        "source": 1138849081739375,
-                        "id": "2503",
-                        "name": "Motorola"
-                    }
-                ]
-            },
-            {
-                "name": "Condición del ítem",
-                "value_id": "2230582",
-                "attribute_group_name": "Otros",
-                "id": "ITEM_CONDITION",
-                "value_name": "Reacondicionado",
-                "value_struct": null,
-                "values": [
-                    {
-                        "id": "2230582",
-                        "name": "Reacondicionado",
-                        "struct": null,
-                        "source": 1138849081739375
-                    }
-                ],
-                "attribute_group_id": "OTHERS",
-                "source": 1138849081739375
-            },
-            {
-                "attribute_group_name": "Otros",
-                "name": "Línea",
-                "value_id": "3073863",
-                "value_struct": null,
-                "values": [
-                    {
-                        "id": "3073863",
-                        "name": "Moto G",
-                        "struct": null,
-                        "source": 1000427007642219
-                    }
-                ],
-                "id": "LINE",
-                "value_name": "Moto G",
-                "attribute_group_id": "OTHERS",
-                "source": 1000427007642219
-            },
-            {
-                "value_id": "2876818",
-                "value_name": "G6 Play",
-                "values": [
-                    {
-                        "id": "2876818",
-                        "name": "G6 Play",
-                        "struct": null,
-                        "source": 1138849081739375
-                    }
-                ],
-                "source": 1138849081739375,
-                "name": "Modelo",
-                "value_struct": null,
-                "attribute_group_id": "OTHERS",
-                "attribute_group_name": "Otros",
-                "id": "MODEL"
-            },
-            {
-                "source": 1183438784296846,
-                "id": "PROCESSOR_MODEL",
-                "value_id": "2087990",
-                "value_name": "Snapdragon 430",
-                "value_struct": null,
-                "name": "Modelo del procesador",
-                "values": [
-                    {
-                        "id": "2087990",
-                        "name": "Snapdragon 430",
-                        "struct": null,
-                        "source": 1183438784296846
-                    }
-                ],
-                "attribute_group_id": "OTHERS",
-                "attribute_group_name": "Otros"
-            }
-        ],
-        "differential_pricing": {
-            "id": 35713248
-        },
-        "original_price": null,
-        "category_id": "MLA1055",
-        "official_store_id": null,
-        "domain_id": "MLA-CELLPHONES",
-        "catalog_product_id": "MLA9413721",
-        "tags": [
-            "brand_verified",
-            "good_quality_picture",
-            "good_quality_thumbnail",
-            "loyalty_discount_eligible",
-            "immediate_payment",
-            "shipping_guaranteed"
-        ],
-        "order_backend": 1,
-        "use_thumbnail_id": false,
-        "offer_score": null,
-        "offer_share": null,
-        "match_score": null,
-        "winner_item_id": null
-    }
-]
-
+            "order_backend": 1,
+            "use_thumbnail_id": false,
+            "offer_score": null,
+            "offer_share": null,
+            "match_score": null,
+            "winner_item_id": null
+        }
+    ]
+}

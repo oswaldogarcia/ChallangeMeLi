@@ -11,28 +11,28 @@ import RxSwift
 
 
 protocol SearchProductProviderProtocol {
-    func getProducts(_ parameters: [String : Any]) -> Observable<[ResultModel]>
+    func getProducts(_ parameters: [String : Any]) -> Observable<ResultModel>
 }
 
 
 class SearchProductProvider: SearchProductProviderProtocol {
     
-    func getProducts(_ parameters: [String : Any]) -> Observable<[ResultModel]> {
-        return Service.requestService(service: .searchProduct(parameters:parameters), model:[ResultModel()])
+    func getProducts(_ parameters: [String : Any]) -> Observable<ResultModel> {
+        return Service.requestService(service: .searchProduct(parameters:parameters), model:ResultModel())
     }
 }
 
 class SearchProductProviderMock: SearchProductProviderProtocol {
-    func getProducts(_ parameters: [String : Any]) -> Observable<[ResultModel]> {
+    func getProducts(_ parameters: [String : Any]) -> Observable<ResultModel> {
         
-        return Observable<[ResultModel]>.create { (observer) -> Disposable in
+        return Observable<ResultModel>.create { (observer) -> Disposable in
             
             let url = Bundle.main.url(forResource: "ProductsMock", withExtension: "json")
             do {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 let jsonData = try Data(contentsOf: url!)
-                let model = try decoder.decode([ResultModel].self, from: jsonData)
+                let model = try decoder.decode(ResultModel.self, from: jsonData)
                 observer.onNext(model)
             }catch let error{
                 observer.onError(error)

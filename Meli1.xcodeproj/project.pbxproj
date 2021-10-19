@@ -16,7 +16,7 @@
 		3F3EACE8271CB074001AC352 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3EACE7271CB074001AC352 /* UIViewController+extension.swift */; };
 		3F3EACEA271CCE77001AC352 /* RequestErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3EACE9271CCE77001AC352 /* RequestErrorModel.swift */; };
 		3F861AD927150CD200FC7373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861AD827150CD200FC7373 /* AppDelegate.swift */; };
-		3F861ADD27150CD200FC7373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861ADC27150CD200FC7373 /* ViewController.swift */; };
+		3F861ADD27150CD200FC7373 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861ADC27150CD200FC7373 /* ProductsListViewController.swift */; };
 		3F861AE027150CD200FC7373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F861ADE27150CD200FC7373 /* Main.storyboard */; };
 		3F861AE227150CDD00FC7373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F861AE127150CDD00FC7373 /* Assets.xcassets */; };
 		3F861AE527150CDD00FC7373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F861AE327150CDD00FC7373 /* LaunchScreen.storyboard */; };
@@ -62,7 +62,7 @@
 		3F3EACE9271CCE77001AC352 /* RequestErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestErrorModel.swift; sourceTree = "<group>"; };
 		3F861AD527150CD200FC7373 /* Meli1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meli1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F861AD827150CD200FC7373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F861ADC27150CD200FC7373 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F861ADC27150CD200FC7373 /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
 		3F861ADF27150CD200FC7373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F861AE127150CDD00FC7373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F861AE427150CDD00FC7373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				3F3EACE4271A41FD001AC352 /* ProductCell */,
-				3F861ADC27150CD200FC7373 /* ViewController.swift */,
+				3F861ADC27150CD200FC7373 /* ProductsListViewController.swift */,
 				3F3EACDF2718E36B001AC352 /* ProductDetailViewController.swift */,
 			);
 			path = View;
@@ -522,7 +522,7 @@
 				3F861B102715E30000FC7373 /* ProductsViewModel.swift in Sources */,
 				3F861B1727161DE600FC7373 /* SceneDelegate.swift in Sources */,
 				3F3EACE02718E36B001AC352 /* ProductDetailViewController.swift in Sources */,
-				3F861ADD27150CD200FC7373 /* ViewController.swift in Sources */,
+				3F861ADD27150CD200FC7373 /* ProductsListViewController.swift in Sources */,
 				3F3EACE6271CA184001AC352 /* UIApplication+extension.swift in Sources */,
 				3F861B0A2715135300FC7373 /* Service.swift in Sources */,
 				3F861AD927150CD200FC7373 /* AppDelegate.swift in Sources */,

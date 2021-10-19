@@ -13,7 +13,7 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var productPriceLabel: UILabel!
     @IBOutlet weak var attributesView: UIView!
     
-    var product : ResultModel = ResultModel()
+    var product : ProductModel = ProductModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()

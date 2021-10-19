@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-894" y="82"/>
         </scene>
-        <!--View Controller-->
+        <!--Products List View Controller-->
         <scene sceneID="fGo-Vu-QY0">
             <objects>
-                <viewController id="bQs-Sk-vF1" customClass="ViewController" customModule="Meli1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bQs-Sk-vF1" customClass="ProductsListViewController" customModule="Meli1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tlK-6a-K51">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

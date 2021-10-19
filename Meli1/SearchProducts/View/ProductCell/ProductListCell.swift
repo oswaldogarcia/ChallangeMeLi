@@ -22,7 +22,7 @@ class ProductListCell: UITableViewCell {
         // Initialization code
     }
     
-    func configureCell(_ product:ResultModel){
+    func configureCell(_ product:ProductModel){
         
         self.productNameLabel.text = product.title        
         self.productImage.kf.setImage(with:URL(string: product.thumbnail ?? ""))

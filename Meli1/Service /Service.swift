@@ -62,8 +62,7 @@ extension Service: TargetType {
                     print(response.request!)
                     switch response.statusCode {
                     case 200...299:
-                        let path = "results"
-                        if let model = try? response.map(T.self, atKeyPath: path, using: JSONDecoder.init(), failsOnEmptyData: false) {
+                        if let model = try? response.map(T.self, using: JSONDecoder.init(), failsOnEmptyData: false) {
                             UIApplication.shared.activityStopAnimating()
                             observer.onNext(model)
                             observer.onCompleted()
