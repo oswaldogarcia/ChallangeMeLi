@@ -51,11 +51,25 @@ extension Service: TargetType {
         return ["Content-type": "application/json"]
     }
     
-    
+    /// This function call a endpoint and returns a `Observable<T>`.
+    ///
+    /// - Warning: The returned string is not localized.
+    ///
+    /// Usage:
+    ///
+    ///     Service.requestService(service:
+    ///      .searchProduct(parameters:parameters),
+    ///       model:ResultModel())
+    ///
+    /// - Parameter service: Service case of the endpoint to be called.
+    /// - Parameter model: Model type expected in the call.
+    ///
+    /// - Returns: A `Observable<T>` when T will be of the kind of Model required.
     static func requestService<T: Codable>(service:Service,model:T) -> Observable<T> {
         
         return Observable<T>.create { (observer) -> Disposable in
             UIApplication.shared.activityStartAnimating()
+            // doing the request with Moya Provider
             provider.rx.request(service).subscribe { result in
                 switch result {
                 case let .success(response):
