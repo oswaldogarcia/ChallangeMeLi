@@ -15,6 +15,7 @@
 		3F3EACE6271CA184001AC352 /* UIApplication+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3EACE5271CA183001AC352 /* UIApplication+extension.swift */; };
 		3F3EACE8271CB074001AC352 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3EACE7271CB074001AC352 /* UIViewController+extension.swift */; };
 		3F3EACEA271CCE77001AC352 /* RequestErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3EACE9271CCE77001AC352 /* RequestErrorModel.swift */; };
+		3F72B7E8271F92D100A95349 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B7E7271F92D100A95349 /* ProductModel.swift */; };
 		3F861AD927150CD200FC7373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861AD827150CD200FC7373 /* AppDelegate.swift */; };
 		3F861ADD27150CD200FC7373 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861ADC27150CD200FC7373 /* ProductsListViewController.swift */; };
 		3F861AE027150CD200FC7373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F861ADE27150CD200FC7373 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		3F3EACE5271CA183001AC352 /* UIApplication+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+extension.swift"; sourceTree = "<group>"; };
 		3F3EACE7271CB074001AC352 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
 		3F3EACE9271CCE77001AC352 /* RequestErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestErrorModel.swift; sourceTree = "<group>"; };
+		3F72B7E7271F92D100A95349 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		3F861AD527150CD200FC7373 /* Meli1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meli1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F861AD827150CD200FC7373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F861ADC27150CD200FC7373 /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,15 @@
 			path = ProductCell;
 			sourceTree = "<group>";
 		};
+		3F72B7E6271F92A800A95349 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F861B0C27152BAB00FC7373 /* ResultModel.swift */,
+				3F3EACE9271CCE77001AC352 /* RequestErrorModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3F861ACC27150CD200FC7373 = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +216,7 @@
 		3F861B082715132300FC7373 /* Service  */ = {
 			isa = PBXGroup;
 			children = (
+				3F72B7E6271F92A800A95349 /* Models */,
 				3F861B092715135300FC7373 /* Service.swift */,
 			);
 			path = "Service ";
@@ -213,8 +225,7 @@
 		3F861B0B27152B8D00FC7373 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3F861B0C27152BAB00FC7373 /* ResultModel.swift */,
-				3F3EACE9271CCE77001AC352 /* RequestErrorModel.swift */,
+				3F72B7E7271F92D100A95349 /* ProductModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -524,6 +535,7 @@
 				3F3EACE02718E36B001AC352 /* ProductDetailViewController.swift in Sources */,
 				3F861ADD27150CD200FC7373 /* ProductsListViewController.swift in Sources */,
 				3F3EACE6271CA184001AC352 /* UIApplication+extension.swift in Sources */,
+				3F72B7E8271F92D100A95349 /* ProductModel.swift in Sources */,
 				3F861B0A2715135300FC7373 /* Service.swift in Sources */,
 				3F861AD927150CD200FC7373 /* AppDelegate.swift in Sources */,
 				3F861B1D2716491200FC7373 /* ProductListCell.swift in Sources */,

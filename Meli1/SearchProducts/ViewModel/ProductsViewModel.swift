@@ -67,6 +67,7 @@ class ProductsViewModel{
     
     func subscribeData()  {
         
+        /// Subscribig to the result of get product and set the results
         self.getProductsResult.subscribe( onNext: { [weak self] (results) in
             let offset = results.paging?.offset ?? 0
             if offset > 0 {
@@ -81,11 +82,17 @@ class ProductsViewModel{
         }).disposed(by: self.disposeBag)
     }
     
-    
-    
+    ///
+    /// Create the parameters Dictionary to search the product
+    /// according to the query and the offset for pagination
+    ///
     private func createParametters(_ query:String, _ paging:Paging) -> [String : Any]{
         
                 var offset = 0
+        
+        
+        
+        
         
                 if (paging.offset ?? 0) + (paging.limit ?? 0) >= (paging.total ?? 0){
                     offset = (paging.offset ?? 0) // no mas
@@ -99,40 +106,5 @@ class ProductsViewModel{
         
     }
     
-    
-//    func searchProduct(){
-//
-//        let query = self.query.value
-//
-//        var offset = 0
-//
-//        if (self.paging.value.offset ?? 0) + (self.paging.value.limit ?? 0) >= (self.paging.value.total ?? 0){
-//            offset = (self.paging.value.offset ?? 0) // no mas
-//
-//        }else{
-//            offset = (self.paging.value.offset ?? 0) + (self.paging.value.limit ?? 0)
-//        }
-//        print("offset:", offset)
-//
-//        let parameters =  ["q": query,"offset":offset] as [String : Any]
-//
-//
-//
-//        self.products.accept([])
-//        if query != ""{
-//            self.getProducts(parameters).subscribe( onNext: { [weak self] (results) in
-//                if offset > 0{
-//                    var products = self?.products.value
-//                    products! += results.products ?? []
-//                    self?.products.accept(products ?? [])
-//
-//                }else{
-//                    self?.products.accept(results.products ?? [])
-//                }
-//                self?.paging.accept(results.paging ?? Paging())
-//            }).disposed(by: self.disposeBag)
-//        }
-//
-//    }
-   
+
 }

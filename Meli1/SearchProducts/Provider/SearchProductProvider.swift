@@ -11,6 +11,7 @@ import RxSwift
 
 
 protocol SearchProductProviderProtocol {
+    // This Method will be used to call the service that provide the array of products
     func getProducts(_ parameters: [String : Any]) -> Observable<ResultModel>
 }
 
@@ -22,7 +23,10 @@ class SearchProductProvider: SearchProductProviderProtocol {
     }
 }
 
+// MARK: - Mock Provider
+/// Use this class a Mock data of products 
 class SearchProductProviderMock: SearchProductProviderProtocol {
+    
     func getProducts(_ parameters: [String : Any]) -> Observable<ResultModel> {
         
         return Observable<ResultModel>.create { (observer) -> Disposable in
