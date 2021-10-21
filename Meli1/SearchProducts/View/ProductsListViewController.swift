@@ -94,7 +94,7 @@ class ProductsListViewController: UIViewController {
             let contentHeight = self.productsListTableView.contentSize.height
 
             if offSetY >= (contentHeight - self.productsListTableView.frame.size.height) {
-                if !self.viewModel.isCalling.value{
+                if !self.viewModel.isCalling.value && !self.viewModel.endOfResults.value{
                     self.viewModel.getProducts.onNext(())
                     self.viewModel.isCalling.accept(true)
                 }

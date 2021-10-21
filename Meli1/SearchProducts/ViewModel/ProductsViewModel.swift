@@ -16,6 +16,7 @@ class ProductsViewModel {
     
     var query : AnyObserver<String>!
     var isCalling = BehaviorRelay<Bool>(value: false)
+    var endOfResults = BehaviorRelay<Bool>(value: false)
     var products =  BehaviorRelay<[ProductModel]>(value: [])
     var paging : AnyObserver<PagingModel>!
     var getProducts : AnyObserver<Void>!
@@ -26,6 +27,7 @@ class ProductsViewModel {
    
     
     init(provider : SearchProductProviderProtocol = SearchProductProvider()){
+        
         self.productsProvider = provider
 
         let _getProducts = PublishSubject<Void>()
@@ -39,7 +41,6 @@ class ProductsViewModel {
 
         let val = Observable.combineLatest(_query,_paging){ query ,paging in (query , paging)}
         
-        self.subscribeData()
         
         self.getProductsResult = _getProducts
             .withLatestFrom(val)
@@ -51,6 +52,7 @@ class ProductsViewModel {
                 
             }
         
+        self.subscribeData()
   }
     
     
@@ -63,17 +65,20 @@ class ProductsViewModel {
     func subscribeData()  {
         
         /// Subscribig to the result of get product and set the results
-        self.getProductsResult.subscribe( onNext: { [weak self] (results) in
-            let offset = results.paging?.offset ?? 0
+        self.getProductsResult.subscribe( onNext: { [weak self] (result) in
+            let offset = result.paging?.offset ?? 0
             if offset > 0 {
                 var products = self?.products.value
-                products! += results.products ?? []
+                products! += result.products ?? []
                 self?.products.accept(products ?? [])
             }else{
-                self?.products.accept(results.products ?? [])
+                self?.products.accept(result.products ?? [])
             }
-            self?.paging.onNext(results.paging ?? PagingModel())
+            self?.paging.onNext(result.paging ?? PagingModel())
             self?.isCalling.accept(false)
+            if offset + (result.paging?.limit ?? 0) >= (result.paging?.total ?? 0){
+                self?.endOfResults.accept(true)
+            }
         }).disposed(by: self.disposeBag)
     }
     
@@ -83,13 +88,13 @@ class ProductsViewModel {
     ///
     /// - Parameter query: String with the value of the user query
     /// - Parameter pagin: PagingModel object to manage the offset of the request
-    ///                    and    the pagination
+    ///                    and the pagination
     private func createParametters(_ query:String, _ paging:PagingModel) -> [String : Any]{
         
                 var offset = 0
         
                 if (paging.offset ?? 0) + (paging.limit ?? 0) >= (paging.total ?? 0){
-                    offset = (paging.offset ?? 0) // no mas
+                    offset = (paging.offset ?? 0) 
                 }else{
                     offset = (paging.offset ?? 0) + (paging.limit ?? 0)
                 }
