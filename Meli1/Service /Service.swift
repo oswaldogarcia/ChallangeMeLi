@@ -11,6 +11,13 @@ import RxSwift
 import Alamofire
 import UIKit
 
+// MARK: - Service Layer
+/// This service layer use the  Framework Moya to do the service calls.
+///
+/// `Documentation:`
+///  https://github.com/Moya/Moya#readme
+///  https://github.com/Moya/Moya/blob/master/docs/RxSwift.md
+
 
 let provider = MoyaProvider<Service>()
 var disposeBag = DisposeBag()
@@ -22,8 +29,12 @@ enum Service {
 // MARK: - TargetType Protocol Implementation
 extension Service: TargetType {
     
-    var baseURL: URL { URL(string: "https://api.mercadolibre.com/sites/MCO")! }
+        
+    /// base API url
+    var baseURL: URL { URL(string: "https://api.mercadolibre.com/sites/MCO")! } // Is set Colombia (MCO) as default site
     
+    
+    // path of each endpoint
     var path: String {
         switch self {
        

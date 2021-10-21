@@ -11,7 +11,7 @@ import Foundation
 struct ResultModel: Codable {
     
     var products: [ProductModel]?
-    var paging: Paging?
+    var paging: PagingModel?
 
 
     enum CodingKeys: String, CodingKey {
@@ -21,8 +21,8 @@ struct ResultModel: Codable {
     }
 }
 
-// MARK: - Paging
-struct Paging: Codable {
+// MARK: - PagingModel
+struct PagingModel: Codable {
     var total, primaryResults, offset, limit: Int?
 
     enum CodingKeys: String, CodingKey {

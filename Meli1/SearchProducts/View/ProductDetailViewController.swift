@@ -7,35 +7,35 @@
 
 import UIKit
 
+/// `ProductDetailViewController`:
+/// This class  shows datails of the product selected
+
 class ProductDetailViewController: UIViewController {
+    
+    
+    // MARK: - IBOutlets
     @IBOutlet weak var productTitleLabel: UILabel!
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productPriceLabel: UILabel!
     @IBOutlet weak var attributesView: UIView!
-    
+    // MARK: - Variables
     var product : ProductModel = ProductModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setProduct()
-        
     }
     
-    deinit {
-        print("ProductDetailViewController deinit")
-    }
-    
-    
+    /// This function set the values of the prduct in the view
     private func setProduct(){
         
         self.productTitleLabel.text = self.product.title ?? ""
         self.productImage.kf.setImage(with:URL(string: self.product.thumbnail ?? ""))
         self.productPriceLabel.text = self.product.price?.asCurrencyString()
         self.setAttributes()
-        
-        
     }
     
+    /// This function create a Stack view to show the attributes values of the products in the view
     private func setAttributes(){
         
         let attributesWidth = Double(self.attributesView.frame.width - 20)
@@ -62,11 +62,9 @@ class ProductDetailViewController: UIViewController {
             attributeStack.distribution = .fillEqually
             
             attributesViews.append(attributeStack)
-            
         }
         
         let attributesStack = UIStackView(arrangedSubviews: attributesViews)
-        
         
         attributesStack.frame = CGRect(x: 0.0, y: 0.0, width: attributesWidth, height: Double(self.product.attributes!.count) * attributeHeight)
         attributesStack.axis = .vertical
@@ -78,9 +76,5 @@ class ProductDetailViewController: UIViewController {
        
         self.attributesView.addSubview(attributesStack)
         
-       
-        
     }
-
-
 }

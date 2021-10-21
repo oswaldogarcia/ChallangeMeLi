@@ -10,6 +10,17 @@ import Foundation
 
 extension Int {
     
+    /// This function convert a `Int` to  `String` of a Number with a Colombian
+    /// currency format
+    ///
+    /// Usage:
+    ///
+    ///        let intValue = 2000
+    ///        intValue.asCurrencyString()
+    ///
+    ///        // $ 2.000
+    ///
+    /// - Returns: `String `  Colombian currency format
     func asCurrencyString() -> String{
         
         let formatter = NumberFormatter()

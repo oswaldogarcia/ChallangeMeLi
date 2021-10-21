@@ -10,13 +10,14 @@ import RxSwift
 import RxCocoa
 import UIKit
 
-
-class ProductsViewModel{
+/// `ProductsViewModel`
+/// This class manage the logic between the Products list view and the ProductModel
+class ProductsViewModel {
     
     var query : AnyObserver<String>!
     var isCalling = BehaviorRelay<Bool>(value: false)
     var products =  BehaviorRelay<[ProductModel]>(value: [])
-    var paging : AnyObserver<Paging>!
+    var paging : AnyObserver<PagingModel>!
     var getProducts : AnyObserver<Void>!
     var getProductsResult : Observable<ResultModel>!
     var disposeBag = DisposeBag()
@@ -26,8 +27,6 @@ class ProductsViewModel{
     
     init(provider : SearchProductProviderProtocol = SearchProductProvider()){
         self.productsProvider = provider
-       
-
 
         let _getProducts = PublishSubject<Void>()
         self.getProducts = _getProducts.asObserver()
@@ -35,15 +34,16 @@ class ProductsViewModel{
         let _query = BehaviorSubject<String>(value: "")
         self.query = _query.asObserver()
     
-        let _paging = BehaviorSubject<Paging>(value: Paging())
+        let _paging = BehaviorSubject<PagingModel>(value: PagingModel())
         self.paging = _paging.asObserver()
 
         let val = Observable.combineLatest(_query,_paging){ query ,paging in (query , paging)}
         
+        self.subscribeData()
+        
         self.getProductsResult = _getProducts
             .withLatestFrom(val)
             .flatMapLatest{ (query,paging) -> Observable<ResultModel> in
-                
                 
                 let parameters =  self.createParametters(query, paging)
 
@@ -51,20 +51,15 @@ class ProductsViewModel{
                 
             }
         
-        
-        
-        self.subscribeData()
-        
   }
     
     
-    
+    ///This function get Products using the method of the provider protocol
      func getProducts(_ parameters:[String : Any])  -> Observable<ResultModel>  {
-        
         return productsProvider.getProducts(parameters)
      }
     
-    
+    ///Subscription of the  Observables
     func subscribeData()  {
         
         /// Subscribig to the result of get product and set the results
@@ -77,31 +72,27 @@ class ProductsViewModel{
             }else{
                 self?.products.accept(results.products ?? [])
             }
-            self?.paging.onNext(results.paging ?? Paging())
+            self?.paging.onNext(results.paging ?? PagingModel())
             self?.isCalling.accept(false)
         }).disposed(by: self.disposeBag)
     }
     
-    ///
-    /// Create the parameters Dictionary to search the product
+    
+    /// This function create the parameters Dictionary to search the product
     /// according to the query and the offset for pagination
     ///
-    private func createParametters(_ query:String, _ paging:Paging) -> [String : Any]{
+    /// - Parameter query: String with the value of the user query
+    /// - Parameter pagin: PagingModel object to manage the offset of the request
+    ///                    and    the pagination
+    private func createParametters(_ query:String, _ paging:PagingModel) -> [String : Any]{
         
                 var offset = 0
         
-        
-        
-        
-        
                 if (paging.offset ?? 0) + (paging.limit ?? 0) >= (paging.total ?? 0){
                     offset = (paging.offset ?? 0) // no mas
-        
                 }else{
                     offset = (paging.offset ?? 0) + (paging.limit ?? 0)
                 }
-                print("offset:", offset)
-        
                 return  ["q": query,"offset":offset] as [String : Any]
         
     }

@@ -46,7 +46,7 @@ class SearchProductTests: XCTestCase {
         let query = "Motorola G6"
         
         viewModel.query.onNext(query)
-        viewModel.paging.onNext(Paging())
+        viewModel.paging.onNext(PagingModel())
         viewModel.getProducts.onNext(())
         
         

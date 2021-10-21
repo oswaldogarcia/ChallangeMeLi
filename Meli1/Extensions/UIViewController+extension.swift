@@ -10,6 +10,7 @@ import UIKit
 
 extension UIViewController {
     
+    /// This function retunrs the most top viewController 
     func getTopMostViewController() -> UIViewController? {
         var topMostViewController = UIApplication.shared.keyWindow().rootViewController
         
@@ -20,7 +21,12 @@ extension UIViewController {
         return topMostViewController
     }
     
-    
+    /// This function shows a overlay view with a started Activity Indicator
+    ///
+    /// Usage:
+    ///
+    ///     self.activityStartAnimating()
+    ///
     func activityStartAnimating() {
         let backgroundView = UIView()
         backgroundView.frame = CGRect.init(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height)
@@ -40,6 +46,12 @@ extension UIViewController {
         self.view.addSubview(backgroundView)
     }
     
+    /// This function remove a overlay view with a  Activity Indicator and stop it
+    ///
+    /// Usage:
+    ///
+    ///     self.activityStopAnimating()
+    ///
     func activityStopAnimating() {
         if let background = self.view.viewWithTag(9999){
             background.removeFromSuperview()
