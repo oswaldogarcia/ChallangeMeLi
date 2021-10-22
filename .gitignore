@@ -1,1 +1,6 @@
 Pods/
+*.xcworkspace
+*.xcscmblueprint
+*.xccheckout
+xcuserdata/
+
