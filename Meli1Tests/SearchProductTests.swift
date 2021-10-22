@@ -18,13 +18,37 @@ class SearchProductTests: XCTestCase {
     
 
     override func setUpWithError() throws {
-        searchProvider = SearchProductProviderMock()
+        searchProvider = SearchProductProviderMock() // Using Mock data
         viewModel = ProductsViewModel(provider: searchProvider)
     }
 
     override func tearDownWithError() throws {
         searchProvider = nil
         viewModel = nil
+        
+    }
+    
+    func testCreateParametersFunction() throws {
+        
+         let query = "Motorola G6"
+         let paging = PagingModel(total: 10, primaryResults: 5, offset: 0, limit: 50)
+        
+        let parameters = viewModel.createParametters(query, paging)
+        
+        XCTAssertEqual(query, parameters["q"] as! String)
+        
+        let paramtersOffset = parameters["offset"]
+        
+        
+        let offsetNotEqualExpeting = (paging.offset!) + (paging.limit!)
+        /// offsetNotEqualExpeting should be different to paramtersOffset because
+        /// in this test paging.offset  plus paging.limit is major than paging.total
+        XCTAssertNotEqual(offsetNotEqualExpeting, paramtersOffset as! Int)
+        
+        let offsetExpeting = (paging.offset!)
+        /// offsetExpeting should be equal to paramtersOffset because
+        /// in this test paging.offset  plus paging.limit is major than paging.total
+        XCTAssertEqual(offsetExpeting, paramtersOffset as! Int)
         
     }
 
@@ -40,7 +64,7 @@ class SearchProductTests: XCTestCase {
         
     }
     
-    func testSearchProduct2() throws{
+    func testSearchProductWithRxEvents() throws{
         let expectation = expectation(description: "retrieving data...")
         
         let query = "Motorola G6"

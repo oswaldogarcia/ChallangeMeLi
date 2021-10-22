@@ -84,7 +84,7 @@ extension Service: TargetType {
             provider.rx.request(service).subscribe { result in
                 switch result {
                 case let .success(response):
-                    print(response.request!)
+                    print("|Service layer| URL requested: \(response.request!)")
                     switch response.statusCode {
                     case 200...299:
                         if let model = try? response.map(T.self, using: JSONDecoder.init(), failsOnEmptyData: false) {

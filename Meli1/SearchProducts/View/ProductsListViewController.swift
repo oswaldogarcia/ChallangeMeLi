@@ -34,7 +34,7 @@ class ProductsListViewController: UIViewController {
     }
     
     func registerNib(){
-        
+        // register the ProductListCell
         let cellNib = UINib(nibName:"ProductListCell", bundle: nil)
         productsListTableView.register(cellNib, forCellReuseIdentifier: "ProductListCell")
         productsListTableView.tableFooterView = UIView()
@@ -42,9 +42,11 @@ class ProductsListViewController: UIViewController {
     
     private func bindData(){
         
-        self.viewModel.products.bind(to:self.productsListTableView.rx.items(cellIdentifier: "ProductListCell", cellType: ProductListCell.self)){row,product,cell in
-            cell.configureCell(product)
-        }.disposed(by: self.disposeBag)
+        /// Bind the data of viewModel.products to productsListTableView to list the product find in the request
+        self.viewModel.products
+            .bind(to:self.productsListTableView.rx.items(cellIdentifier: "ProductListCell", cellType: ProductListCell.self)){row,product,cell in
+                cell.configureCell(product)
+            }.disposed(by: self.disposeBag)
         
     }
     

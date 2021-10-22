@@ -66,18 +66,24 @@ class ProductsViewModel {
         
         /// Subscribig to the result of get product and set the results
         self.getProductsResult.subscribe( onNext: { [weak self] (result) in
-            let offset = result.paging?.offset ?? 0
-            if offset > 0 {
-                var products = self?.products.value
-                products! += result.products ?? []
-                self?.products.accept(products ?? [])
+            if result.products?.count ?? 0 > 0 {
+                
+                let offset = result.paging?.offset ?? 0
+                if offset > 0 {
+                    var products = self?.products.value
+                    products! += result.products ?? []
+                    self?.products.accept(products ?? [])
+                }else{
+                    self?.products.accept(result.products ?? [])
+                }
+                self?.paging.onNext(result.paging ?? PagingModel())
+                self?.isCalling.accept(false)
+                if offset + (result.paging?.limit ?? 0) >= (result.paging?.total ?? 0){
+                    self?.endOfResults.accept(true)
+                }
             }else{
-                self?.products.accept(result.products ?? [])
-            }
-            self?.paging.onNext(result.paging ?? PagingModel())
-            self?.isCalling.accept(false)
-            if offset + (result.paging?.limit ?? 0) >= (result.paging?.total ?? 0){
-                self?.endOfResults.accept(true)
+                UIApplication.shared.showErrorAlert("No se encotró el producto que estas buscando." , title: "Lo sentimos!")
+                self?.products.accept([])
             }
         }).disposed(by: self.disposeBag)
     }
@@ -89,7 +95,7 @@ class ProductsViewModel {
     /// - Parameter query: String with the value of the user query
     /// - Parameter pagin: PagingModel object to manage the offset of the request
     ///                    and the pagination
-    private func createParametters(_ query:String, _ paging:PagingModel) -> [String : Any]{
+    func createParametters(_ query:String, _ paging:PagingModel) -> [String : Any]{
         
                 var offset = 0
         
