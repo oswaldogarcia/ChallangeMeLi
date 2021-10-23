@@ -15,8 +15,4 @@ target 'Meli1' do
     # Pods for testing
   end
 
-  target 'Meli1UITests' do
-    # Pods for testing
-  end
-
 end
