@@ -23,8 +23,8 @@
 
 ## Requirements
 
-- iOS 14.5
-- Xcode 12.5 
+- iOS 15.2
+- Xcode 13.2
 - Cocoapods 
 
 
