@@ -4,3 +4,6 @@ Pods/
 *.xccheckout
 xcuserdata/
 
+Meli1.xcodeproj/xcuserdata/oswaldogarcia.xcuserdatad/xcschemes/xcschememanagement.plist
+Podfile.lock
+Meli1.xcworkspace/xcuserdata/oswaldogarcia.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
