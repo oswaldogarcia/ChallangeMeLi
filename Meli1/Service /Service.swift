@@ -111,11 +111,11 @@ extension Service: TargetType {
                     
                 case let .failure(error):
                     UIApplication.shared.activityStopAnimating()
-                    UIApplication.shared.showErrorAlert(error.localizedDescription)
+                    UIApplication.shared.showErrorAlert("Lo sentimos, hubo un error de conexión")
                     
-                    print(error)
-                    observer.onError(error)
-                    observer.onCompleted()
+                    print(error.localizedDescription)
+                    //observer.onError(error)
+                    //observer.onCompleted()
                 }
             }.disposed(by: disposeBag)
             

@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 /// `ProductDetailViewController`:
 /// This class  shows datails of the product selected
@@ -17,13 +19,26 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var productTitleLabel: UILabel!
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productPriceLabel: UILabel!
-    @IBOutlet weak var attributesView: UIView!
+    @IBOutlet weak var attributesTableview: UITableView!
+    //@IBOutlet weak var attributesView: UIView!
     // MARK: - Variables
+    var disposeBag = DisposeBag()
     var product : ProductModel = ProductModel()
-
+    var attributes =  BehaviorRelay<[Attribute]>(value: [])
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.attributesTableview.delegate = self
+        self.registerNib()
+        self.bindData()
         self.setProduct()
+    }
+    
+    func registerNib(){
+        // register the ProductListCell
+        let cellNib = UINib(nibName:"AttributesTableViewCell", bundle: nil)
+        attributesTableview.register(cellNib, forCellReuseIdentifier: "AttributesTableViewCell")
+        attributesTableview.tableFooterView = UIView()
     }
     
     /// This function set the values of the prduct in the view
@@ -32,11 +47,23 @@ class ProductDetailViewController: UIViewController {
         self.productTitleLabel.text = self.product.title ?? ""
         self.productImage.kf.setImage(with:URL(string: self.product.thumbnail ?? ""))
         self.productPriceLabel.text = self.product.price?.asCurrencyString()
-        self.setAttributes()
+        self.attributes.accept(self.product.attributes ?? [])
+        //self.setAttributes()
     }
     
+    private func bindData(){
+        
+        /// Bind the data of product.attributes
+        self.attributes
+            .bind(to:self.attributesTableview.rx.items(cellIdentifier: "AttributesTableViewCell", cellType: AttributesTableViewCell.self)){row,attribute,cell in
+                cell.configCell(attribute: attribute)
+            }.disposed(by: self.disposeBag)
+        
+    }
+    
+    
     /// This function create a Stack view to show the attributes values of the products in the view
-    private func setAttributes(){
+   /* private func setAttributes(){
         
         let attributesWidth = Double(self.attributesView.frame.width - 20)
         let attributeHeight = 50.0
@@ -77,4 +104,17 @@ class ProductDetailViewController: UIViewController {
         self.attributesView.addSubview(attributesStack)
         
     }
+    */
 }
+    
+    // MARK: - UITableViewDelegate
+    extension ProductDetailViewController: UITableViewDelegate {
+        
+        // set height of the cells
+        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            
+            return 50.00
+            
+        }
+    }
+

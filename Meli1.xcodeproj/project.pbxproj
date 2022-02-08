@@ -14,6 +14,8 @@
 		3F3EACE6271CA184001AC352 /* UIApplication+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3EACE5271CA183001AC352 /* UIApplication+extension.swift */; };
 		3F3EACE8271CB074001AC352 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3EACE7271CB074001AC352 /* UIViewController+extension.swift */; };
 		3F3EACEA271CCE77001AC352 /* RequestErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3EACE9271CCE77001AC352 /* RequestErrorModel.swift */; };
+		3F727B9127B1E43400816E3B /* AttributesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F727B8F27B1E43400816E3B /* AttributesTableViewCell.swift */; };
+		3F727B9227B1E43400816E3B /* AttributesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F727B9027B1E43400816E3B /* AttributesTableViewCell.xib */; };
 		3F72B7E8271F92D100A95349 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B7E7271F92D100A95349 /* ProductModel.swift */; };
 		3F861AD927150CD200FC7373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861AD827150CD200FC7373 /* AppDelegate.swift */; };
 		3F861ADD27150CD200FC7373 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861ADC27150CD200FC7373 /* ProductsListViewController.swift */; };
@@ -51,6 +53,8 @@
 		3F3EACE5271CA183001AC352 /* UIApplication+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+extension.swift"; sourceTree = "<group>"; };
 		3F3EACE7271CB074001AC352 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
 		3F3EACE9271CCE77001AC352 /* RequestErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestErrorModel.swift; sourceTree = "<group>"; };
+		3F727B8F27B1E43400816E3B /* AttributesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesTableViewCell.swift; sourceTree = "<group>"; };
+		3F727B9027B1E43400816E3B /* AttributesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttributesTableViewCell.xib; sourceTree = "<group>"; };
 		3F72B7E7271F92D100A95349 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		3F861AD527150CD200FC7373 /* Meli1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meli1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F861AD827150CD200FC7373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 			children = (
 				3F861B1B2716491100FC7373 /* ProductListCell.swift */,
 				3F861B1C2716491200FC7373 /* ProductListCell.xib */,
+				3F727B8F27B1E43400816E3B /* AttributesTableViewCell.swift */,
+				3F727B9027B1E43400816E3B /* AttributesTableViewCell.xib */,
 			);
 			path = ProductCell;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 			files = (
 				3F861AE527150CDD00FC7373 /* LaunchScreen.storyboard in Resources */,
 				3F861B1E2716491200FC7373 /* ProductListCell.xib in Resources */,
+				3F727B9227B1E43400816E3B /* AttributesTableViewCell.xib in Resources */,
 				3F861AE227150CDD00FC7373 /* Assets.xcassets in Resources */,
 				3F861AE027150CD200FC7373 /* Main.storyboard in Resources */,
 				3F861B1A2716248400FC7373 /* ProductsMock.json in Resources */,
@@ -428,6 +435,7 @@
 			files = (
 				3F861B102715E30000FC7373 /* ProductsViewModel.swift in Sources */,
 				3F861B1727161DE600FC7373 /* SceneDelegate.swift in Sources */,
+				3F727B9127B1E43400816E3B /* AttributesTableViewCell.swift in Sources */,
 				3F3EACE02718E36B001AC352 /* ProductDetailViewController.swift in Sources */,
 				3F861ADD27150CD200FC7373 /* ProductsListViewController.swift in Sources */,
 				3F3EACE6271CA184001AC352 /* UIApplication+extension.swift in Sources */,
