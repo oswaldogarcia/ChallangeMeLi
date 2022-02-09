@@ -56,7 +56,7 @@ class ProductDetailViewController: UIViewController {
         /// Bind the data of product.attributes
         self.attributes
             .bind(to:self.attributesTableview.rx.items(cellIdentifier: "AttributesTableViewCell", cellType: AttributesTableViewCell.self)){row,attribute,cell in
-                cell.configCell(attribute: attribute)
+                cell.configCell(attribute: attribute, row: row)
             }.disposed(by: self.disposeBag)
         
     }
@@ -115,6 +115,11 @@ class ProductDetailViewController: UIViewController {
             
             return 50.00
             
+        }
+        
+        func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+            
+            return 450.00
         }
     }
 
