@@ -19,26 +19,39 @@ class AttributesTableViewCell: UITableViewCell {
         
         self.attrNameView.layer.borderWidth = 1
         self.attrNameView.layer.borderColor = UIColor.systemGray5.cgColor
-        self.attrNameView.layer.cornerRadius = 5.0
+        
         
         self.attrValueView.layer.borderWidth = 1
         self.attrValueView.layer.borderColor = UIColor.systemGray5.cgColor
-        self.attrValueView.layer.cornerRadius = 5.0
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
-    func configCell(attribute: Attribute, row: Int){
+    func configCell(attribute: Attribute, row: Int, isTheLast:Bool){
         
-        self.attrNameLabel.text = attribute.name
+        self.attrNameLabel.text = "\(attribute.name ?? ""):"
         self.attrValueLabel.text = attribute.valueName
         
         self.attrNameView.backgroundColor = row % 2 == 0 ? .white : .systemGray6
         self.attrValueView.backgroundColor = row % 2 == 0 ? .systemGray6 : .white
+        
+        if row == 0 {
+            self.attrNameView.layer.cornerRadius = 5.0
+            self.attrNameView.layer.maskedCorners = [.layerMinXMinYCorner]
+            self.attrValueView.layer.cornerRadius = 5.0
+            self.attrValueView.layer.maskedCorners = [.layerMaxXMinYCorner]
+        }
+        
+        if isTheLast {
+            self.attrNameView.layer.cornerRadius = 5.0
+            self.attrNameView.layer.maskedCorners = [.layerMinXMaxYCorner]
+            self.attrValueView.layer.cornerRadius = 5.0
+            self.attrValueView.layer.maskedCorners = [.layerMaxXMaxYCorner]
+            
+        }
     }
     
 }

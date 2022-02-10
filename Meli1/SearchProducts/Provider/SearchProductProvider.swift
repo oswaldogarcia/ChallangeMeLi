@@ -36,7 +36,7 @@ protocol SearchProductProviderProtocol {
 class SearchProductProvider: SearchProductProviderProtocol {
     
     func getProducts(_ parameters: [String : Any]) -> Observable<ResultModel> {
-        return Service.requestService(service: .searchProduct(parameters:parameters), model:ResultModel())
+        return Service.requestService(service: .searchProducts(parameters:parameters), model:ResultModel())
     }
 }
 

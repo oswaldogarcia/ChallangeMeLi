@@ -22,32 +22,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="180" height="136"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOo-3k-rsQ">
-                                <rect key="frame" x="5" y="58" width="41.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="5" y="0.0" width="175" height="136"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
+                            <constraint firstItem="kOo-3k-rsQ" firstAttribute="top" secondItem="OAW-77-9ef" secondAttribute="top" id="AON-qu-HR8"/>
                             <constraint firstItem="kOo-3k-rsQ" firstAttribute="leading" secondItem="OAW-77-9ef" secondAttribute="leading" constant="5" id="IPV-Hk-jIO"/>
-                            <constraint firstItem="kOo-3k-rsQ" firstAttribute="centerY" secondItem="OAW-77-9ef" secondAttribute="centerY" id="zdU-kJ-AwZ"/>
+                            <constraint firstAttribute="trailing" secondItem="kOo-3k-rsQ" secondAttribute="trailing" id="RGE-eq-e7a"/>
+                            <constraint firstAttribute="bottom" secondItem="kOo-3k-rsQ" secondAttribute="bottom" id="nzf-la-c7p"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJj-uM-Rjl">
                         <rect key="frame" x="180" y="0.0" width="180" height="136"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3f5-5E-djK">
-                                <rect key="frame" x="5" y="58" width="41.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="5" y="0.0" width="175" height="136"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3f5-5E-djK" firstAttribute="centerY" secondItem="cJj-uM-Rjl" secondAttribute="centerY" id="APb-qs-FMG"/>
                             <constraint firstItem="3f5-5E-djK" firstAttribute="leading" secondItem="cJj-uM-Rjl" secondAttribute="leading" constant="5" id="Gbb-hv-Rcc"/>
+                            <constraint firstAttribute="trailing" secondItem="3f5-5E-djK" secondAttribute="trailing" id="vhN-D3-nwk"/>
+                            <constraint firstItem="3f5-5E-djK" firstAttribute="top" secondItem="cJj-uM-Rjl" secondAttribute="top" id="vsG-nl-8ez"/>
+                            <constraint firstAttribute="bottom" secondItem="3f5-5E-djK" secondAttribute="bottom" id="y0s-X7-9fi"/>
                         </constraints>
                     </view>
                 </subviews>

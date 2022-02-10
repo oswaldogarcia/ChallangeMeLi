@@ -20,8 +20,9 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productPriceLabel: UILabel!
     @IBOutlet weak var attributesTableview: UITableView!
-    //@IBOutlet weak var attributesView: UIView!
+    
     // MARK: - Variables
+    var productDetailViewModel = ProductDetailViewModel()
     var disposeBag = DisposeBag()
     var product : ProductModel = ProductModel()
     var attributes =  BehaviorRelay<[Attribute]>(value: [])
@@ -32,6 +33,8 @@ class ProductDetailViewController: UIViewController {
         self.registerNib()
         self.bindData()
         self.setProduct()
+        self.productDetailViewModel.poductId.onNext(self.product.id ?? "")
+        self.productDetailViewModel.getProduct.onNext(())
     }
     
     func registerNib(){
@@ -55,8 +58,8 @@ class ProductDetailViewController: UIViewController {
         
         /// Bind the data of product.attributes
         self.attributes
-            .bind(to:self.attributesTableview.rx.items(cellIdentifier: "AttributesTableViewCell", cellType: AttributesTableViewCell.self)){row,attribute,cell in
-                cell.configCell(attribute: attribute, row: row)
+            .bind(to:self.attributesTableview.rx.items(cellIdentifier: "AttributesTableViewCell", cellType: AttributesTableViewCell.self)){ [weak self] (row,attribute,cell) in
+                cell.configCell(attribute: attribute, row: row , isTheLast: row == ((self?.attributes.value.count ?? 0) - 1))
             }.disposed(by: self.disposeBag)
         
     }
@@ -113,7 +116,7 @@ class ProductDetailViewController: UIViewController {
         // set height of the cells
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
             
-            return 50.00
+            return 60.00
             
         }
         

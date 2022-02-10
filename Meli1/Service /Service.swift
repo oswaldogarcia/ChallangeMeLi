@@ -23,7 +23,8 @@ let provider = MoyaProvider<Service>()
 var disposeBag = DisposeBag()
 
 enum Service {
-    case searchProduct(parameters:[String : Any])
+    case searchProducts(parameters:[String : Any])
+    case getProductItem(parameters:[String : Any])
 }
 
 // MARK: - TargetType Protocol Implementation
@@ -31,31 +32,37 @@ extension Service: TargetType {
     
         
     /// base API url
-    var baseURL: URL { URL(string: "https://api.mercadolibre.com/sites/MCO")! } // Is set Colombia (MCO) as default site
+    var baseURL: URL { URL(string: "https://api.mercadolibre.com")! } // Is set Colombia (MCO) as default site
     
     
     // path of each endpoint
     var path: String {
         switch self {
-       
-        case .searchProduct(_):
-            return "/search"
+            
+        case .searchProducts(_):
+            return "/sites/MCO/search"
+        case .getProductItem(_):
+            return "/items"
+            
         }
+        
     }
     
     
     var method: Moya.Method {
         switch self {
-        case .searchProduct(_):
+        case .searchProducts(_),.getProductItem(_):
             return .get
         }
     }
     
     var task: Task {
         switch self {
-        case .searchProduct(let parameters):
+        case .searchProducts(let parameters),.getProductItem(let parameters):
             return .requestParameters(parameters:parameters, encoding: URLEncoding.queryString)
+        
         }
+        
     }
 
     var headers: [String: String]? {
