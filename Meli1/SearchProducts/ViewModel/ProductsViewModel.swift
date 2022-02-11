@@ -61,7 +61,6 @@ class ProductsViewModel {
     ///Subscription of the  Observables
     func subscribeData()  {
         
-        
         /// Subscribig to the result of get product and set the results
         self.getProductsResult.subscribe( onNext: { [weak self] (result) in
             UIApplication.shared.activityStopAnimating()
