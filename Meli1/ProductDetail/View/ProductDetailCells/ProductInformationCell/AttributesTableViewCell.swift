@@ -17,12 +17,12 @@ class AttributesTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        self.attrNameView.layer.borderWidth = 1
-        self.attrNameView.layer.borderColor = UIColor.systemGray5.cgColor
+        self.attrNameView.layer.borderWidth = 0.3
+        self.attrNameView.layer.borderColor = UIColor.systemGray4.cgColor
         
         
-        self.attrValueView.layer.borderWidth = 1
-        self.attrValueView.layer.borderColor = UIColor.systemGray5.cgColor
+        self.attrValueView.layer.borderWidth = 0.3
+        self.attrValueView.layer.borderColor = UIColor.systemGray4.cgColor
         
     }
 
@@ -35,7 +35,7 @@ class AttributesTableViewCell: UITableViewCell {
         self.attrNameLabel.text = "\(attribute.name ?? ""):"
         self.attrValueLabel.text = attribute.valueName
         
-        self.attrNameView.backgroundColor = row % 2 == 0 ? .white : .systemGray6
+        self.attrNameView.backgroundColor = row % 2 == 0 ? .systemGray5 : .systemGray6
         self.attrValueView.backgroundColor = row % 2 == 0 ? .systemGray6 : .white
         
         if row == 0 {

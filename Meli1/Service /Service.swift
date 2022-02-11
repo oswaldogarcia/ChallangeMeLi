@@ -86,7 +86,7 @@ extension Service: TargetType {
     static func requestService<T: Codable>(service:Service,model:T) -> Observable<T> {
         
         return Observable<T>.create { (observer) -> Disposable in
-            UIApplication.shared.activityStartAnimating()
+            
             // doing the request with Moya Provider
             provider.rx.request(service).subscribe { result in
                 switch result {
@@ -95,7 +95,6 @@ extension Service: TargetType {
                     switch response.statusCode {
                     case 200...299:
                         if let model = try? response.map(T.self, using: JSONDecoder.init(), failsOnEmptyData: false) {
-                            UIApplication.shared.activityStopAnimating()
                             observer.onNext(model)
                             observer.onCompleted()
                         }else {

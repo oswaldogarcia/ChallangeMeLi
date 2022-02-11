@@ -14,6 +14,7 @@ struct ProductModel: Codable {
     var thumbnail: String?
     var shipping: Shipping?
     var attributes: [Attribute]?
+    var installments: Installments?
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -23,6 +24,7 @@ struct ProductModel: Codable {
         case thumbnail
         case shipping
         case attributes
+        case installments
         
     }
 }
@@ -74,3 +76,16 @@ struct Shipping: Codable {
         case storePickUp = "store_pick_up"
     }
 }
+// MARK: - Installments
+struct Installments: Codable {
+    var quantity: Int?
+    var amount: Double?
+    var rate: Int?
+    var currencyID: String?
+
+    enum CodingKeys: String, CodingKey {
+        case quantity, amount, rate
+        case currencyID = "currency_id"
+    }
+}
+

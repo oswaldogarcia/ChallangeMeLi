@@ -56,22 +56,12 @@ class ProductsListViewController: UIViewController {
         /// search bar to use the value of productsSearchBar.text
         /// productsSearchBar.text value as string of the query
         /// to search product
-        self.productsSearchBar.searchTextField.rx.controlEvent([.editingDidEndOnExit])            .subscribe(onNext: { [weak self] _ in
-            let query = self?.productsSearchBar.text ?? ""
-            self?.view.endEditing(true)
-            
-            self?.title = query != "" ? query : self?.initialNavigationTitle
-            
-            self?.viewModel.query.onNext(query)
-            self?.viewModel.paging.onNext(PagingModel())
-            if query != "" {
-                self?.viewModel.getProducts.onNext(())
-            }else{
-                self?.viewModel.products.accept([])
-            }
-            self?.logoImage.isHidden = query != ""
-            
+        self.productsSearchBar.searchTextField.rx.controlEvent([.editingDidEndOnExit])
+            .subscribe(onNext: { [weak self] (event) in
+                self?.view.endEditing(true)
+                self?.searchProducts()
         }).disposed(by: self.disposeBag)
+        
         
         /// Subscribtion of the .modelSelected event of
         /// productsListTableView to redirect the user to
@@ -103,8 +93,23 @@ class ProductsListViewController: UIViewController {
             }
         }).disposed(by: self.disposeBag)
 
-        
+    }
     
+    func searchProducts(){
+        
+        let query = self.productsSearchBar.text ?? ""
+        
+        self.title = query != "" ? query : self.initialNavigationTitle
+        
+        self.viewModel.query.onNext(query)
+        self.viewModel.paging.onNext(PagingModel())
+        if query != "" {
+            self.viewModel.getProducts.onNext(())
+        }else{
+            self.viewModel.products.accept([])
+        }
+        self.logoImage.isHidden = query != ""
+        
     }
     
 }
@@ -115,7 +120,7 @@ extension ProductsListViewController: UITableViewDelegate {
     // set height of the cells
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 150.00
+        return 160.00
         
     }
 }

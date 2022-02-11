@@ -61,8 +61,6 @@ class ProductDetailViewModel {
         /// Subscribig to the result of get product and set the results
         self.getProductDetailResult.subscribe( onNext: { [weak self] (result) in
             
-            print(result.first?.code)
-           
             self?.product.accept(result.first?.body ?? ProductDetailBody())
             
         }).disposed(by: self.disposeBag)

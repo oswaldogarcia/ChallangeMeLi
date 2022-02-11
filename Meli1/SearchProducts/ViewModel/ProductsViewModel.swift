@@ -41,15 +41,12 @@ class ProductsViewModel {
 
         let val = Observable.combineLatest(_query,_paging){ query ,paging in (query , paging)}
         
-        
         self.getProductsResult = _getProducts
             .withLatestFrom(val)
             .flatMapLatest{ (query,paging) -> Observable<ResultModel> in
-                
+                UIApplication.shared.activityStartAnimating()
                 let parameters =  self.createParametters(query, paging)
-
                 return self.getProducts(parameters)
-                
             }
         
         self.subscribeData()
@@ -64,8 +61,10 @@ class ProductsViewModel {
     ///Subscription of the  Observables
     func subscribeData()  {
         
+        
         /// Subscribig to the result of get product and set the results
         self.getProductsResult.subscribe( onNext: { [weak self] (result) in
+            UIApplication.shared.activityStopAnimating()
             if result.products?.count ?? 0 > 0 {
                 
                 let offset = result.paging?.offset ?? 0

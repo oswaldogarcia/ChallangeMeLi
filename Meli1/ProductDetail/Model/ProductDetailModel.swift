@@ -31,7 +31,7 @@ struct ProductDetailBody: Codable {
 //    var initialQuantity, availableQuantity, soldQuantity: Int?
 //    var saleTerms: [Attribute]?
 //    var buyingMode, listingTypeID, startTime, stopTime: String?
-//    var condition: String?
+    var condition: String?
 //    var permalink: String?
 //    var thumbnailID: String?
 //    var thumbnail: String?
@@ -47,7 +47,7 @@ struct ProductDetailBody: Codable {
 //    var sellerContact: JSONNull?
 //    var location: Location?
 //    var coverageAreas: [JSONAny]?
-//    var attributes: [Attribute]?
+    var attributes: [Attribute]?
 //    var warnings: [JSONAny]?
 //    var listingSource: String?
 //    var variations: [JSONAny]?
@@ -82,7 +82,8 @@ struct ProductDetailBody: Codable {
 //        case listingTypeID = "listing_type_id"
 //        case startTime = "start_time"
 //        case stopTime = "stop_time"
-//        case condition, permalink
+        case condition
+//        case permalink
 //        case thumbnailID = "thumbnail_id"
 //        case thumbnail
 //        case secureThumbnail = "secure_thumbnail"
@@ -97,7 +98,8 @@ struct ProductDetailBody: Codable {
 //        case sellerContact = "seller_contact"
 //        case location
 //        case coverageAreas = "coverage_areas"
-//        case attributes, warnings
+        case attributes
+//        case warnings
 //        case listingSource = "listing_source"
 //        case variations
 //        case status
