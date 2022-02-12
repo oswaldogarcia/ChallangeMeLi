@@ -43,24 +43,27 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULB-Cl-Ggy">
-                                <rect key="frame" x="91.5" y="2" width="35" height="35"/>
+                                <rect key="frame" x="96.5" y="2" width="30" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6a-WJ-YaX">
-                                        <rect key="frame" x="6.5" y="7.5" width="22" height="20"/>
+                                        <rect key="frame" x="6" y="7.5" width="18" height="15"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="4PB-9V-3rn"/>
-                                            <constraint firstAttribute="width" constant="22" id="QGg-R0-IIx"/>
+                                            <constraint firstAttribute="height" constant="15" id="4PB-9V-3rn"/>
+                                            <constraint firstAttribute="width" constant="18" id="QGg-R0-IIx"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="suit.heart" catalog="system"/>
+                                        <connections>
+                                            <action selector="favoriteButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aZw-pK-KDB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.90198009997814688" alpha="0.24572826567150302" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="35" id="3vn-l1-IHU"/>
+                                    <constraint firstAttribute="width" constant="30" id="3vn-l1-IHU"/>
                                     <constraint firstItem="K6a-WJ-YaX" firstAttribute="centerX" secondItem="ULB-Cl-Ggy" secondAttribute="centerX" id="4Vo-Qh-9k1"/>
-                                    <constraint firstAttribute="height" constant="35" id="5Kl-DQ-PPk"/>
+                                    <constraint firstAttribute="height" constant="30" id="5Kl-DQ-PPk"/>
                                     <constraint firstItem="K6a-WJ-YaX" firstAttribute="centerY" secondItem="ULB-Cl-Ggy" secondAttribute="centerY" id="8Sl-sa-z7F"/>
                                 </constraints>
                             </view>

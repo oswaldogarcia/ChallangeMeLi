@@ -19,6 +19,22 @@ extension UIApplication {
             .first?.windows
             .filter({$0.isKeyWindow}).first ?? UIWindow()
     }
+    // This function shows an Alert message
+    ///
+    /// Usage:
+    ///
+    ///     UIApplication.shared.
+    ///     showAlert("message" ,title: "title" )
+    ///
+    ///
+    /// - Parameter message : `String ` to idicate the error message
+    /// - Parameter title: `String ` to identify the tittle of the alert
+    ///
+    func showAlert(_ message:String,title:String){
+        let alert = UIAlertController(title:title , message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        UIApplication.shared.keyWindow().rootViewController?.getTopMostViewController()?.present(alert, animated: true, completion: nil)
+    }
     
 
     /// This function shows an Alert with a error message

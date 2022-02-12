@@ -29,6 +29,9 @@
                         <state key="normal" title="Comprar ahora">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
+                        <connections>
+                            <action selector="buyButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="usq-rP-vzW"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ac9-Ap-mCg">
                         <rect key="frame" x="20" y="70" width="334" height="50"/>
@@ -39,6 +42,9 @@
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" title="Agregar al carrito"/>
+                        <connections>
+                            <action selector="addCarButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mvu-Cc-nEr"/>
+                        </connections>
                     </button>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.shield" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tRx-ZV-Tdu">
                         <rect key="frame" x="20" y="135.5" width="20" height="19"/>
@@ -93,45 +99,37 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WsU-u7-ea5">
                         <rect key="frame" x="62" y="213.5" width="250" height="47"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agregar a favoritos." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tco-BV-gPN">
-                                <rect key="frame" x="32" y="16.5" width="109.5" height="14.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lk-iY-ARk">
+                                <rect key="frame" x="6" y="14.5" width="130.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
-                                <color key="textColor" systemColor="tintColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c8d-LF-7ww">
-                                <rect key="frame" x="10" y="15" width="20" height="17.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="X2x-cD-mdM"/>
-                                    <constraint firstAttribute="width" constant="20" id="dYn-2b-k85"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scale.3d" catalog="system" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNb-E2-PjU">
-                                <rect key="frame" x="154" y="14.5" width="20" height="18"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="3Hd-vp-Pci"/>
-                                    <constraint firstAttribute="width" constant="20" id="nbz-9J-de0"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compartir." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSO-iZ-MX4">
-                                <rect key="frame" x="176" y="16.5" width="59" height="14.5"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Agregar a favoritos." image="heart" catalog="system">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addFovoriteButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WXe-cd-iIe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SM9-Ft-kfU">
+                                <rect key="frame" x="155" y="14" width="80" height="19"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
-                                <color key="textColor" systemColor="tintColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Compartir." image="scale.3d" catalog="system">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SOp-MQ-ILg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fSO-iZ-MX4" firstAttribute="centerY" secondItem="WsU-u7-ea5" secondAttribute="centerY" id="FMQ-xf-w9H"/>
-                            <constraint firstItem="c8d-LF-7ww" firstAttribute="centerY" secondItem="WsU-u7-ea5" secondAttribute="centerY" id="TQ0-wQ-S8m"/>
-                            <constraint firstItem="fSO-iZ-MX4" firstAttribute="leading" secondItem="WNb-E2-PjU" secondAttribute="trailing" constant="2" id="TZy-qg-zMe"/>
-                            <constraint firstItem="tco-BV-gPN" firstAttribute="leading" secondItem="c8d-LF-7ww" secondAttribute="trailing" constant="2" id="UjQ-mT-2cn"/>
                             <constraint firstAttribute="width" constant="250" id="Xy7-kO-fPs"/>
-                            <constraint firstItem="tco-BV-gPN" firstAttribute="centerY" secondItem="WsU-u7-ea5" secondAttribute="centerY" id="dy6-Mr-56A"/>
-                            <constraint firstItem="c8d-LF-7ww" firstAttribute="leading" secondItem="WsU-u7-ea5" secondAttribute="leading" constant="10" id="i4C-CW-wBH"/>
-                            <constraint firstAttribute="trailing" secondItem="fSO-iZ-MX4" secondAttribute="trailing" constant="15" id="lSa-sk-2rE"/>
-                            <constraint firstItem="WNb-E2-PjU" firstAttribute="centerY" secondItem="WsU-u7-ea5" secondAttribute="centerY" id="lYP-x7-9gf"/>
+                            <constraint firstItem="9lk-iY-ARk" firstAttribute="leading" secondItem="WsU-u7-ea5" secondAttribute="leading" constant="6" id="ajp-D9-vwJ"/>
                             <constraint firstAttribute="height" constant="47" id="oq8-Xv-oso"/>
+                            <constraint firstItem="SM9-Ft-kfU" firstAttribute="centerY" secondItem="WsU-u7-ea5" secondAttribute="centerY" id="yXo-hN-35e"/>
+                            <constraint firstItem="9lk-iY-ARk" firstAttribute="centerY" secondItem="WsU-u7-ea5" secondAttribute="centerY" id="ybq-X7-w2c"/>
+                            <constraint firstAttribute="trailing" secondItem="SM9-Ft-kfU" secondAttribute="trailing" constant="15" id="ycy-PG-hVj"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -160,6 +158,8 @@
             <connections>
                 <outlet property="buyButton" destination="gCw-6K-5uZ" id="CIk-rP-zeV"/>
                 <outlet property="carButton" destination="ac9-Ap-mCg" id="HRK-Z4-hEv"/>
+                <outlet property="favoriteButton" destination="9lk-iY-ARk" id="vz5-qF-7CD"/>
+                <outlet property="shareButton" destination="SM9-Ft-kfU" id="9kP-D2-XWc"/>
             </connections>
             <point key="canvasLocation" x="176.81159420289856" y="123.88392857142857"/>
         </tableViewCell>
@@ -177,9 +177,6 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

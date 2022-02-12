@@ -33,34 +33,14 @@ struct ProductModel: Codable {
 
 // MARK: - Attribute
 struct Attribute: Codable {
-    var valueID, attributeGroupName: String?
-    var source: Int?
-    var attributeGroupID, id, name, valueName: String?
-    var values: [Value]?
-
+    var  id, name, valueName: String?
+    
     enum CodingKeys: String, CodingKey {
-        case valueID = "value_id"
-        case attributeGroupName = "attribute_group_name"
-        case source
-        case attributeGroupID = "attribute_group_id"
         case id, name
         case valueName = "value_name"
-        case values
-    }
-}
-
-// MARK: - Value
-struct Value: Codable {
-    
-    var source: Int?
-    var id, name: String?
-
-    enum CodingKeys: String, CodingKey {
         
-        case source, id, name
     }
 }
-
 // MARK: - Shipping
 struct Shipping: Codable {
     var freeShipping: Bool?

@@ -9,17 +9,17 @@ import UIKit
 
 class AttributesTableViewCell: UITableViewCell {
 
+    // MARK: - IBOutlets
     @IBOutlet weak var attrNameLabel: UILabel!
     @IBOutlet weak var attrValueLabel: UILabel!
     @IBOutlet weak var attrNameView: UIView!
     @IBOutlet weak var attrValueView: UIView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        
         self.attrNameView.layer.borderWidth = 0.3
         self.attrNameView.layer.borderColor = UIColor.systemGray4.cgColor
-        
         
         self.attrValueView.layer.borderWidth = 0.3
         self.attrValueView.layer.borderColor = UIColor.systemGray4.cgColor

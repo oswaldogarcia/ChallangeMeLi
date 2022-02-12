@@ -56,8 +56,8 @@ class ProductDetailViewModel {
         
         /// Subscribig to the result of get product and set the result
         self.getProductDetailResult.subscribe( onNext: { [weak self] (result) in
-            print(result.first?.code)
-            if result.first?.body?.id != nil {
+            
+            if result.first?.code == 200 {
             self?.product.accept(result.first?.body ?? ProductDetailBody())
             }
             UIApplication.shared.activityStopAnimating()

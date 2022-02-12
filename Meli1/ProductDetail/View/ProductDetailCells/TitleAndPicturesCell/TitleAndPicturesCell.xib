@@ -33,14 +33,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="por Seller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYz-w1-ZvU">
-                                <rect key="frame" x="20" y="62.5" width="58.5" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" systemColor="systemGrayColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROH-DQ-nu0">
-                                <rect key="frame" x="20" y="93.5" width="355" height="240"/>
+                                <rect key="frame" x="20" y="92.5" width="355" height="240"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1NF-na-mvu">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="240"/>
@@ -93,12 +87,10 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ROH-DQ-nu0" secondAttribute="trailing" constant="20" id="AqM-Ye-HIS"/>
                             <constraint firstItem="YEV-pC-t5u" firstAttribute="leading" secondItem="ChS-di-dEt" secondAttribute="leading" constant="20" id="BW6-Hr-iGw"/>
-                            <constraint firstItem="CYz-w1-ZvU" firstAttribute="top" secondItem="QSS-27-pHg" secondAttribute="bottom" id="E0R-uE-cDw"/>
                             <constraint firstItem="ROH-DQ-nu0" firstAttribute="leading" secondItem="ChS-di-dEt" secondAttribute="leading" constant="20" id="Fi2-iD-8wB"/>
                             <constraint firstItem="QSS-27-pHg" firstAttribute="leading" secondItem="ChS-di-dEt" secondAttribute="leading" constant="20" id="K9c-Zu-y4f"/>
                             <constraint firstAttribute="trailing" secondItem="QSS-27-pHg" secondAttribute="trailing" constant="20" id="Nfo-SS-rbC"/>
-                            <constraint firstItem="1NF-na-mvu" firstAttribute="top" secondItem="CYz-w1-ZvU" secondAttribute="bottom" constant="15" id="QEk-Ef-20q"/>
-                            <constraint firstItem="CYz-w1-ZvU" firstAttribute="leading" secondItem="ChS-di-dEt" secondAttribute="leading" constant="20" id="eIr-1e-YbS"/>
+                            <constraint firstItem="ROH-DQ-nu0" firstAttribute="top" secondItem="QSS-27-pHg" secondAttribute="bottom" constant="30" id="fAX-VB-R2x"/>
                             <constraint firstItem="YEV-pC-t5u" firstAttribute="top" secondItem="ChS-di-dEt" secondAttribute="top" constant="20" id="rpr-66-uru"/>
                             <constraint firstItem="QSS-27-pHg" firstAttribute="top" secondItem="YEV-pC-t5u" secondAttribute="bottom" constant="10" id="tHd-Uo-SAe"/>
                             <constraint firstItem="QSS-27-pHg" firstAttribute="height" secondItem="ChS-di-dEt" secondAttribute="height" multiplier="0.3" priority="250" id="zqz-ny-mta"/>
@@ -119,7 +111,6 @@
                 <outlet property="imagesCounterLabel" destination="wib-bx-NuR" id="54H-XN-8Hh"/>
                 <outlet property="productPicturesCollectionView" destination="1NF-na-mvu" id="7Bj-qO-gG4"/>
                 <outlet property="productPicturesView" destination="ROH-DQ-nu0" id="XGf-YD-A5z"/>
-                <outlet property="sellerLabel" destination="CYz-w1-ZvU" id="yet-xg-wJK"/>
                 <outlet property="titleProductLabel" destination="QSS-27-pHg" id="MHc-et-eih"/>
             </connections>
             <point key="canvasLocation" x="-122.46376811594205" y="49.21875"/>

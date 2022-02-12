@@ -33,28 +33,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Con tu Tarjeta de Credito" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZt-Hu-FKO">
-                                <rect key="frame" x="0.0" y="24" width="159.5" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Con tu Tarjeta de Crédito" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZt-Hu-FKO">
+                                <rect key="frame" x="0.0" y="24" width="160" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mas Informacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luf-Re-AQy">
-                                <rect key="frame" x="0.0" y="42" width="106" height="17"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <color key="textColor" systemColor="linkColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYp-0j-Q57">
+                                <rect key="frame" x="0.0" y="36" width="99" height="28"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Mas Información">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="moreInfoAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8o2-UE-uvN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Luf-Re-AQy" firstAttribute="leading" secondItem="lrx-28-AGm" secondAttribute="leading" id="2es-dW-uOp"/>
                             <constraint firstItem="XZt-Hu-FKO" firstAttribute="leading" secondItem="lrx-28-AGm" secondAttribute="leading" id="CNg-gX-vI7"/>
                             <constraint firstItem="gEa-Sy-A25" firstAttribute="top" secondItem="lrx-28-AGm" secondAttribute="top" constant="5" id="Vh8-6g-XVv"/>
                             <constraint firstAttribute="height" constant="60" id="cDG-FV-u5i"/>
                             <constraint firstItem="gEa-Sy-A25" firstAttribute="leading" secondItem="lrx-28-AGm" secondAttribute="leading" id="fqk-O8-fGk"/>
                             <constraint firstItem="XZt-Hu-FKO" firstAttribute="top" secondItem="gEa-Sy-A25" secondAttribute="bottom" constant="1" id="jmj-BS-pMF"/>
-                            <constraint firstItem="Luf-Re-AQy" firstAttribute="top" secondItem="XZt-Hu-FKO" secondAttribute="bottom" constant="1" id="mFE-jA-ykP"/>
+                            <constraint firstItem="JYp-0j-Q57" firstAttribute="top" secondItem="XZt-Hu-FKO" secondAttribute="bottom" constant="-5" id="qUI-0P-PQk"/>
+                            <constraint firstItem="JYp-0j-Q57" firstAttribute="leading" secondItem="XZt-Hu-FKO" secondAttribute="leading" id="zor-kd-mZb"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ylq-uZ-cf6">
@@ -72,22 +77,27 @@
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver mas formas de entregas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaO-vJ-jjZ">
-                                <rect key="frame" x="0.0" y="41" width="168.5" height="16"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0CU-1e-vnr">
+                                <rect key="frame" x="0.0" y="35" width="169" height="28"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
-                                <color key="textColor" systemColor="linkColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Ver mas formas de entregas">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="deliveryButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gL3-CR-mre"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lVS-yx-Iy5" firstAttribute="top" secondItem="LLQ-t4-7gi" secondAttribute="bottom" constant="1" id="C4d-jN-czh"/>
-                            <constraint firstItem="eaO-vJ-jjZ" firstAttribute="leading" secondItem="Ylq-uZ-cf6" secondAttribute="leading" id="OKR-Nx-nYs"/>
+                            <constraint firstItem="0CU-1e-vnr" firstAttribute="leading" secondItem="lVS-yx-Iy5" secondAttribute="leading" id="DKh-pS-Y9U"/>
+                            <constraint firstItem="0CU-1e-vnr" firstAttribute="top" secondItem="lVS-yx-Iy5" secondAttribute="bottom" constant="-5" id="ItM-rb-Xss"/>
                             <constraint firstAttribute="height" constant="60" id="ed3-Hz-y2b"/>
                             <constraint firstItem="lVS-yx-Iy5" firstAttribute="leading" secondItem="Ylq-uZ-cf6" secondAttribute="leading" id="edR-pj-gO7"/>
                             <constraint firstItem="LLQ-t4-7gi" firstAttribute="top" secondItem="Ylq-uZ-cf6" secondAttribute="top" constant="5" id="pLC-Yq-Z7P"/>
                             <constraint firstItem="LLQ-t4-7gi" firstAttribute="leading" secondItem="Ylq-uZ-cf6" secondAttribute="leading" id="tAI-Dp-R2q"/>
-                            <constraint firstItem="eaO-vJ-jjZ" firstAttribute="top" secondItem="lVS-yx-Iy5" secondAttribute="bottom" constant="1" id="whl-kr-Mpb"/>
                         </constraints>
                     </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shippingbox" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OxH-qk-Cvz">

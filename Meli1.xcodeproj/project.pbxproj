@@ -32,6 +32,8 @@
 		3F727BBD27B612D400816E3B /* GetProductDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F727BBC27B612D300816E3B /* GetProductDetailTests.swift */; };
 		3F727BBF27B616ED00816E3B /* ProductDetailMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F727BBE27B616ED00816E3B /* ProductDetailMock.json */; };
 		3F727BC127B6174900816E3B /* ProductDetailProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F727BC027B6174900816E3B /* ProductDetailProviderMock.swift */; };
+		3F727BC327B6EA5800816E3B /* SearchProductProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F727BC227B6EA5800816E3B /* SearchProductProviderMock.swift */; };
+		3F727BC627B6FE6E00816E3B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F727BC527B6FE6D00816E3B /* Helpers.swift */; };
 		3F72B7E8271F92D100A95349 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72B7E7271F92D100A95349 /* ProductModel.swift */; };
 		3F861AD927150CD200FC7373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861AD827150CD200FC7373 /* AppDelegate.swift */; };
 		3F861ADD27150CD200FC7373 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F861ADC27150CD200FC7373 /* ProductsListViewController.swift */; };
@@ -87,6 +89,8 @@
 		3F727BBC27B612D300816E3B /* GetProductDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductDetailTests.swift; sourceTree = "<group>"; };
 		3F727BBE27B616ED00816E3B /* ProductDetailMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProductDetailMock.json; sourceTree = "<group>"; };
 		3F727BC027B6174900816E3B /* ProductDetailProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailProviderMock.swift; sourceTree = "<group>"; };
+		3F727BC227B6EA5800816E3B /* SearchProductProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductProviderMock.swift; sourceTree = "<group>"; };
+		3F727BC527B6FE6D00816E3B /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		3F72B7E7271F92D100A95349 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		3F861AD527150CD200FC7373 /* Meli1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meli1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F861AD827150CD200FC7373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -267,6 +271,14 @@
 			path = ProductInformationCell;
 			sourceTree = "<group>";
 		};
+		3F727BC427B6FE1000816E3B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3F727BC527B6FE6D00816E3B /* Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		3F72B7E6271F92A800A95349 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,10 +311,11 @@
 		3F861AD727150CD200FC7373 /* Meli1 */ = {
 			isa = PBXGroup;
 			children = (
-				3F727B9327B4B2EC00816E3B /* ProductDetail */,
 				3F861B11271616C800FC7373 /* SearchProducts */,
+				3F727B9327B4B2EC00816E3B /* ProductDetail */,
 				3F861B082715132300FC7373 /* Service  */,
 				3F3EACE12718F352001AC352 /* Extensions */,
+				3F727BC427B6FE1000816E3B /* Helpers */,
 				3F861AD827150CD200FC7373 /* AppDelegate.swift */,
 				3F861B1627161DE600FC7373 /* SceneDelegate.swift */,
 				3F861ADE27150CD200FC7373 /* Main.storyboard */,
@@ -373,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				3F861B142716175500FC7373 /* SearchProductProvider.swift */,
+				3F727BC227B6EA5800816E3B /* SearchProductProviderMock.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -575,6 +589,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F727BC627B6FE6E00816E3B /* Helpers.swift in Sources */,
+				3F727BC327B6EA5800816E3B /* SearchProductProviderMock.swift in Sources */,
 				3F861B102715E30000FC7373 /* ProductsViewModel.swift in Sources */,
 				3F861B1727161DE600FC7373 /* SceneDelegate.swift in Sources */,
 				3F727B9127B1E43400816E3B /* AttributesTableViewCell.swift in Sources */,

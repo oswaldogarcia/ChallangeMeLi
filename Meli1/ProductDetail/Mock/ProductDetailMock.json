@@ -1,686 +1,687 @@
-{
-    "code": 200,
-    "body": {
-        "id": "MCO638902957",
-        "site_id": "MCO",
-        "title": "iMac 21.5  4k / Ci3 Qc 3.6 8va G / Ram 8gb / Ssd 256gb / Víd",
-        "subtitle": null,
-        "seller_id": 470474833,
-        "category_id": "MCO117593",
-        "official_store_id": 1440,
-        "price": 6442000,
-        "base_price": 6442000,
-        "original_price": null,
-        "currency_id": "COP",
-        "initial_quantity": 5,
-        "available_quantity": 1,
-        "sold_quantity": 0,
-        "sale_terms": [],
-        "buying_mode": "buy_it_now",
-        "listing_type_id": "gold_special",
-        "start_time": "2021-06-23T17:21:24.000Z",
-        "stop_time": "2041-06-18T04:00:00.000Z",
-        "condition": "new",
-        "permalink": "https://articulo.mercadolibre.com.co/MCO-638902957-imac-215-4k-ci3-qc-36-8va-g-ram-8gb-ssd-256gb-vid-_JM",
-        "thumbnail_id": "780624-MCO46493008273_062021",
-        "thumbnail": "http://http2.mlstatic.com/D_780624-MCO46493008273_062021-I.jpg",
-        "secure_thumbnail": "https://http2.mlstatic.com/D_780624-MCO46493008273_062021-I.jpg",
-        "pictures": [
-        {
-            "id": "780624-MCO46493008273_062021",
-            "url": "http://http2.mlstatic.com/D_780624-MCO46493008273_062021-O.jpg",
-            "secure_url": "https://http2.mlstatic.com/D_780624-MCO46493008273_062021-O.jpg",
-            "size": "500x426",
-            "max_size": "598x510",
-            "quality": ""
-        },
-        {
-            "id": "782132-MCO46493008270_062021",
-            "url": "http://http2.mlstatic.com/D_782132-MCO46493008270_062021-O.jpg",
-            "secure_url": "https://http2.mlstatic.com/D_782132-MCO46493008270_062021-O.jpg",
-            "size": "368x500",
-            "max_size": "448x608",
-            "quality": ""
-        },
-        {
-            "id": "827876-MCO46493008271_062021",
-            "url": "http://http2.mlstatic.com/D_827876-MCO46493008271_062021-O.jpg",
-            "secure_url": "https://http2.mlstatic.com/D_827876-MCO46493008271_062021-O.jpg",
-            "size": "458x500",
-            "max_size": "642x700",
-            "quality": ""
-        },
-        {
-            "id": "636498-MCO46493008272_062021",
-            "url": "http://http2.mlstatic.com/D_636498-MCO46493008272_062021-O.jpg",
-            "secure_url": "https://http2.mlstatic.com/D_636498-MCO46493008272_062021-O.jpg",
-            "size": "368x500",
-            "max_size": "448x608",
-            "quality": ""
-        },
-        {
-            "id": "946292-MCO46493008269_062021",
-            "url": "http://http2.mlstatic.com/D_946292-MCO46493008269_062021-O.jpg",
-            "secure_url": "https://http2.mlstatic.com/D_946292-MCO46493008269_062021-O.jpg",
-            "size": "500x426",
-            "max_size": "598x510",
-            "quality": ""
-        }
-        ],
-        "video_id": null,
-        "descriptions": [],
-        "accepts_mercadopago": true,
-        "non_mercado_pago_payment_methods": [],
-        "shipping": {
-            "mode": "me2",
-            "free_methods": [
-            {
-                "id": 501745,
-                "rule": {
-                    "default": true,
-                    "free_mode": "country",
-                    "free_shipping_flag": true,
-                    "value": null
+[
+    {
+        "code": 200,
+        "body": {
+            "id": "MCO638902957",
+            "site_id": "MCO",
+            "title": "iMac 21.5  4k / Ci3 Qc 3.6 8va G / Ram 8gb / Ssd 256gb / Víd",
+            "subtitle": null,
+            "seller_id": 470474833,
+            "category_id": "MCO117593",
+            "official_store_id": 1440,
+            "price": 6442000,
+            "base_price": 6442000,
+            "original_price": null,
+            "currency_id": "COP",
+            "initial_quantity": 5,
+            "available_quantity": 1,
+            "sold_quantity": 0,
+            "sale_terms": [],
+            "buying_mode": "buy_it_now",
+            "listing_type_id": "gold_special",
+            "start_time": "2021-06-23T17:21:24.000Z",
+            "stop_time": "2041-06-18T04:00:00.000Z",
+            "condition": "new",
+            "permalink": "https://articulo.mercadolibre.com.co/MCO-638902957-imac-215-4k-ci3-qc-36-8va-g-ram-8gb-ssd-256gb-vid-_JM",
+            "thumbnail_id": "780624-MCO46493008273_062021",
+            "thumbnail": "http://http2.mlstatic.com/D_780624-MCO46493008273_062021-I.jpg",
+            "secure_thumbnail": "https://http2.mlstatic.com/D_780624-MCO46493008273_062021-I.jpg",
+            "pictures": [
+                {
+                    "id": "780624-MCO46493008273_062021",
+                    "url": "http://http2.mlstatic.com/D_780624-MCO46493008273_062021-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_780624-MCO46493008273_062021-O.jpg",
+                    "size": "500x426",
+                    "max_size": "598x510",
+                    "quality": ""
+                },
+                {
+                    "id": "782132-MCO46493008270_062021",
+                    "url": "http://http2.mlstatic.com/D_782132-MCO46493008270_062021-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_782132-MCO46493008270_062021-O.jpg",
+                    "size": "368x500",
+                    "max_size": "448x608",
+                    "quality": ""
+                },
+                {
+                    "id": "827876-MCO46493008271_062021",
+                    "url": "http://http2.mlstatic.com/D_827876-MCO46493008271_062021-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_827876-MCO46493008271_062021-O.jpg",
+                    "size": "458x500",
+                    "max_size": "642x700",
+                    "quality": ""
+                },
+                {
+                    "id": "636498-MCO46493008272_062021",
+                    "url": "http://http2.mlstatic.com/D_636498-MCO46493008272_062021-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_636498-MCO46493008272_062021-O.jpg",
+                    "size": "368x500",
+                    "max_size": "448x608",
+                    "quality": ""
+                },
+                {
+                    "id": "946292-MCO46493008269_062021",
+                    "url": "http://http2.mlstatic.com/D_946292-MCO46493008269_062021-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_946292-MCO46493008269_062021-O.jpg",
+                    "size": "500x426",
+                    "max_size": "598x510",
+                    "quality": ""
                 }
-            }
             ],
-            "tags": [
-            "self_service_out",
-            "mandatory_free_shipping"
-            ],
-            "dimensions": null,
-            "local_pick_up": false,
-            "free_shipping": true,
-            "logistic_type": "cross_docking",
-            "store_pick_up": false
-        },
-        "international_delivery_mode": "none",
-        "seller_address": {
-            "city": {
-                "id": "TUNPQ0NPVGFiYzZm",
-                "name": "Cota"
+            "video_id": null,
+            "descriptions": [],
+            "accepts_mercadopago": true,
+            "non_mercado_pago_payment_methods": [],
+            "shipping": {
+                "mode": "me2",
+                "free_methods": [
+                    {
+                        "id": 501745,
+                        "rule": {
+                            "default": true,
+                            "free_mode": "country",
+                            "free_shipping_flag": true,
+                            "value": null
+                        }
+                    }
+                ],
+                "tags": [
+                    "self_service_out",
+                    "mandatory_free_shipping"
+                ],
+                "dimensions": null,
+                "local_pick_up": false,
+                "free_shipping": true,
+                "logistic_type": "cross_docking",
+                "store_pick_up": false
             },
-            "state": {
-                "id": "CO-CUN",
-                "name": "Cundinamarca"
-            },
-            "country": {
-                "id": "CO",
-                "name": "Colombia"
-            },
-            "search_location": {
+            "international_delivery_mode": "none",
+            "seller_address": {
                 "city": {
                     "id": "TUNPQ0NPVGFiYzZm",
                     "name": "Cota"
                 },
                 "state": {
-                    "id": "TUNPUENVTmE3NmQ4",
+                    "id": "CO-CUN",
                     "name": "Cundinamarca"
-                }
+                },
+                "country": {
+                    "id": "CO",
+                    "name": "Colombia"
+                },
+                "search_location": {
+                    "city": {
+                        "id": "TUNPQ0NPVGFiYzZm",
+                        "name": "Cota"
+                    },
+                    "state": {
+                        "id": "TUNPUENVTmE3NmQ4",
+                        "name": "Cundinamarca"
+                    }
+                },
+                "id": 1068054476
             },
-            "id": 1068054476
-        },
-        "seller_contact": null,
-        "location": {},
-        "coverage_areas": [],
-        "attributes": [
-        {
-            "id": "ALPHANUMERIC_MODEL",
-            "name": "Modelo alfanumérico",
-            "value_id": null,
-            "value_name": "MHK23E/A",
-            "value_struct": null,
-            "values": [
-            {
-                "id": null,
-                "name": "MHK23E/A",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "BRAND",
-            "name": "Marca",
-            "value_id": "9344",
-            "value_name": "Apple",
-            "value_struct": null,
-            "values": [
-            {
-                "id": "9344",
-                "name": "Apple",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "CORES_NUMBER",
-            "name": "Cantidad de núcleos",
-            "value_id": null,
-            "value_name": "4",
-            "value_struct": null,
-            "values": [
-            {
-                "id": null,
-                "name": "4",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "DATA_STORAGE_TYPE",
-            "name": "Tipo de almacenamiento de datos",
-            "value_id": "365877",
-            "value_name": "SSD",
-            "value_struct": null,
-            "values": [
-            {
-                "id": "365877",
-                "name": "SSD",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "DISPLAY_RESOLUTION",
-            "name": "Resolución de la pantalla",
-            "value_id": null,
-            "value_name": "4096 x 2304",
-            "value_struct": null,
-            "values": [
-            {
-                "id": null,
-                "name": "4096 x 2304",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "DISPLAY_SIZE",
-            "name": "Tamaño de la pantalla",
-            "value_id": null,
-            "value_name": "21 in",
-            "value_struct": {
-                "number": 21,
-                "unit": "in"
-            },
-            "values": [
-            {
-                "id": null,
-                "name": "21 in",
-                "struct": {
-                    "number": 21,
-                    "unit": "in"
-                }
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "DISPLAY_TYPE",
-            "name": "Tipo de pantalla",
-            "value_id": null,
-            "value_name": "Pantalla Retina 4K",
-            "value_struct": null,
-            "values": [
-            {
-                "id": null,
-                "name": "Pantalla Retina 4K",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "GPU",
-            "name": "GPU",
-            "value_id": "-1",
-            "value_name": null,
-            "value_struct": null,
-            "values": [
-            {
-                "id": "-1",
-                "name": null,
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "HARD_DRIVE_DATA_STORAGE_CAPACITY",
-            "name": "Capacidad del disco rígido",
-            "value_id": "-1",
-            "value_name": null,
-            "value_struct": null,
-            "values": [
-            {
-                "id": "-1",
-                "name": null,
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "IS_KIT",
-            "name": "Es kit",
-            "value_id": "242084",
-            "value_name": "No",
-            "value_struct": null,
-            "values": [
-            {
-                "id": "242084",
-                "name": "No",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "ITEM_CONDITION",
-            "name": "Condición del ítem",
-            "value_id": "2230284",
-            "value_name": "Nuevo",
-            "value_struct": null,
-            "values": [
-            {
-                "id": "2230284",
-                "name": "Nuevo",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "LINE",
-            "name": "Línea",
-            "value_id": "15305",
-            "value_name": "iMac",
-            "value_struct": null,
-            "values": [
-            {
-                "id": "15305",
-                "name": "iMac",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "MEMORY_CARDS_TYPES",
-            "name": "Tipos de tarjetas de memoria",
-            "value_id": null,
-            "value_name": "DDR4 de 2400 MHz",
-            "value_struct": null,
-            "values": [
-            {
-                "id": null,
-                "name": "DDR4 de 2400 MHz",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "MICROPHONE_INPUT",
-            "name": "Entrada para micrófono",
-            "value_id": "242085",
-            "value_name": "Sí",
-            "value_struct": null,
-            "values": [
-            {
-                "id": "242085",
-                "name": "Sí",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "MODEL",
-            "name": "Modelo",
-            "value_id": "7311611",
-            "value_name": "A2116",
-            "value_struct": null,
-            "values": [
-            {
-                "id": "7311611",
-                "name": "A2116",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "OS_EDITION",
-            "name": "Edición del sistema operativo",
-            "value_id": null,
-            "value_name": "macOS",
-            "value_struct": null,
-            "values": [
-            {
-                "id": null,
-                "name": "macOS",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "OS_NAME",
-            "name": "Nombre del sistema operativo",
-            "value_id": "7232871",
-            "value_name": "macOS",
-            "value_struct": null,
-            "values": [
-            {
-                "id": "7232871",
-                "name": "macOS",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "OS_VERSION",
-            "name": "Versión del sistema operativo",
-            "value_id": null,
-            "value_name": "BIG SUR",
-            "value_struct": null,
-            "values": [
-            {
-                "id": null,
-                "name": "BIG SUR",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "PROCESSOR",
-            "name": "Procesador",
-            "value_id": null,
-            "value_name": "Intel Core i3 de 4 núcleos y 3.6 GHz",
-            "value_struct": null,
-            "values": [
-            {
-                "id": null,
-                "name": "Intel Core i3 de 4 núcleos y 3.6 GHz",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "PROCESSOR_SPEED",
-            "name": "Velocidad del procesador",
-            "value_id": null,
-            "value_name": "36 GHz",
-            "value_struct": {
-                "number": 36,
-                "unit": "GHz"
-            },
-            "values": [
-            {
-                "id": null,
-                "name": "36 GHz",
-                "struct": {
-                    "number": 36,
-                    "unit": "GHz"
-                }
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "RAM_MEMORY",
-            "name": "Memoria RAM",
-            "value_id": "-1",
-            "value_name": null,
-            "value_struct": null,
-            "values": [
-            {
-                "id": "-1",
-                "name": null,
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "SSD_DATA_STORAGE_CAPACITY",
-            "name": "Capacidad del SSD",
-            "value_id": "-1",
-            "value_name": null,
-            "value_struct": null,
-            "values": [
-            {
-                "id": "-1",
-                "name": null,
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "WEBCAM",
-            "name": "Cámara web",
-            "value_id": "242085",
-            "value_name": "Sí",
-            "value_struct": null,
-            "values": [
-            {
-                "id": "242085",
-                "name": "Sí",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "WITH_BLUETOOTH",
-            "name": "Con Bluetooth",
-            "value_id": "242085",
-            "value_name": "Sí",
-            "value_struct": null,
-            "values": [
-            {
-                "id": "242085",
-                "name": "Sí",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "WITH_HDMI",
-            "name": "Con HDMI",
-            "value_id": "242084",
-            "value_name": "No",
-            "value_struct": null,
-            "values": [
-            {
-                "id": "242084",
-                "name": "No",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "WITH_HEADPHONES_OUTPUT",
-            "name": "Con salida para auriculares",
-            "value_id": "242085",
-            "value_name": "Sí",
-            "value_struct": null,
-            "values": [
-            {
-                "id": "242085",
-                "name": "Sí",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "WITH_MICROPHONE",
-            "name": "Con micrófono",
-            "value_id": "242085",
-            "value_name": "Sí",
-            "value_struct": null,
-            "values": [
-            {
-                "id": "242085",
-                "name": "Sí",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "WITH_TOUCH_SCREEN",
-            "name": "Con pantalla táctil",
-            "value_id": "242084",
-            "value_name": "No",
-            "value_struct": null,
-            "values": [
-            {
-                "id": "242084",
-                "name": "No",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "WITH_USB_PORT",
-            "name": "Con puerto USB",
-            "value_id": "242085",
-            "value_name": "Sí",
-            "value_struct": null,
-            "values": [
-            {
-                "id": "242085",
-                "name": "Sí",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        },
-        {
-            "id": "WITH_WI_FI",
-            "name": "Con Wi-Fi",
-            "value_id": "242085",
-            "value_name": "Sí",
-            "value_struct": null,
-            "values": [
-            {
-                "id": "242085",
-                "name": "Sí",
-                "struct": null
-            }
-            ],
-            "attribute_group_id": "OTHERS",
-            "attribute_group_name": "Otros"
-        }
-        ],
-        "warnings": [],
-        "listing_source": "",
-        "variations": [
-        {
-            "id": 173796612442,
-            "price": 6442000.00,
-            "attribute_combinations": [
-            {
-                "id": "COLOR",
-                "name": "Color",
-                "value_id": "283165",
-                "value_name": "Gris",
-                "value_struct": null,
-                "values": [
+            "seller_contact": null,
+            "location": {},
+            "coverage_areas": [],
+            "attributes": [
                 {
-                    "id": "283165",
-                    "name": "Gris",
-                    "struct": null
+                    "id": "ALPHANUMERIC_MODEL",
+                    "name": "Modelo alfanumérico",
+                    "value_id": null,
+                    "value_name": "MHK23E/A",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "MHK23E/A",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "BRAND",
+                    "name": "Marca",
+                    "value_id": "9344",
+                    "value_name": "Apple",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "9344",
+                            "name": "Apple",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "CORES_NUMBER",
+                    "name": "Cantidad de núcleos",
+                    "value_id": null,
+                    "value_name": "4",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "4",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "DATA_STORAGE_TYPE",
+                    "name": "Tipo de almacenamiento de datos",
+                    "value_id": "365877",
+                    "value_name": "SSD",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "365877",
+                            "name": "SSD",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "DISPLAY_RESOLUTION",
+                    "name": "Resolución de la pantalla",
+                    "value_id": null,
+                    "value_name": "4096 x 2304",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "4096 x 2304",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "DISPLAY_SIZE",
+                    "name": "Tamaño de la pantalla",
+                    "value_id": null,
+                    "value_name": "21 in",
+                    "value_struct": {
+                        "number": 21,
+                        "unit": "in"
+                    },
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "21 in",
+                            "struct": {
+                                "number": 21,
+                                "unit": "in"
+                            }
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "DISPLAY_TYPE",
+                    "name": "Tipo de pantalla",
+                    "value_id": null,
+                    "value_name": "Pantalla Retina 4K",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "Pantalla Retina 4K",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "GPU",
+                    "name": "GPU",
+                    "value_id": "-1",
+                    "value_name": null,
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "-1",
+                            "name": null,
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "HARD_DRIVE_DATA_STORAGE_CAPACITY",
+                    "name": "Capacidad del disco rígido",
+                    "value_id": "-1",
+                    "value_name": null,
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "-1",
+                            "name": null,
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "IS_KIT",
+                    "name": "Es kit",
+                    "value_id": "242084",
+                    "value_name": "No",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "242084",
+                            "name": "No",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "ITEM_CONDITION",
+                    "name": "Condición del ítem",
+                    "value_id": "2230284",
+                    "value_name": "Nuevo",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "2230284",
+                            "name": "Nuevo",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "LINE",
+                    "name": "Línea",
+                    "value_id": "15305",
+                    "value_name": "iMac",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "15305",
+                            "name": "iMac",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "MEMORY_CARDS_TYPES",
+                    "name": "Tipos de tarjetas de memoria",
+                    "value_id": null,
+                    "value_name": "DDR4 de 2400 MHz",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "DDR4 de 2400 MHz",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "MICROPHONE_INPUT",
+                    "name": "Entrada para micrófono",
+                    "value_id": "242085",
+                    "value_name": "Sí",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "242085",
+                            "name": "Sí",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "MODEL",
+                    "name": "Modelo",
+                    "value_id": "7311611",
+                    "value_name": "A2116",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "7311611",
+                            "name": "A2116",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "OS_EDITION",
+                    "name": "Edición del sistema operativo",
+                    "value_id": null,
+                    "value_name": "macOS",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "macOS",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "OS_NAME",
+                    "name": "Nombre del sistema operativo",
+                    "value_id": "7232871",
+                    "value_name": "macOS",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "7232871",
+                            "name": "macOS",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "OS_VERSION",
+                    "name": "Versión del sistema operativo",
+                    "value_id": null,
+                    "value_name": "BIG SUR",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "BIG SUR",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "PROCESSOR",
+                    "name": "Procesador",
+                    "value_id": null,
+                    "value_name": "Intel Core i3 de 4 núcleos y 3.6 GHz",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "Intel Core i3 de 4 núcleos y 3.6 GHz",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "PROCESSOR_SPEED",
+                    "name": "Velocidad del procesador",
+                    "value_id": null,
+                    "value_name": "36 GHz",
+                    "value_struct": {
+                        "number": 36,
+                        "unit": "GHz"
+                    },
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "36 GHz",
+                            "struct": {
+                                "number": 36,
+                                "unit": "GHz"
+                            }
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "RAM_MEMORY",
+                    "name": "Memoria RAM",
+                    "value_id": "-1",
+                    "value_name": null,
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "-1",
+                            "name": null,
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "SSD_DATA_STORAGE_CAPACITY",
+                    "name": "Capacidad del SSD",
+                    "value_id": "-1",
+                    "value_name": null,
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "-1",
+                            "name": null,
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "WEBCAM",
+                    "name": "Cámara web",
+                    "value_id": "242085",
+                    "value_name": "Sí",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "242085",
+                            "name": "Sí",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "WITH_BLUETOOTH",
+                    "name": "Con Bluetooth",
+                    "value_id": "242085",
+                    "value_name": "Sí",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "242085",
+                            "name": "Sí",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "WITH_HDMI",
+                    "name": "Con HDMI",
+                    "value_id": "242084",
+                    "value_name": "No",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "242084",
+                            "name": "No",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "WITH_HEADPHONES_OUTPUT",
+                    "name": "Con salida para auriculares",
+                    "value_id": "242085",
+                    "value_name": "Sí",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "242085",
+                            "name": "Sí",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "WITH_MICROPHONE",
+                    "name": "Con micrófono",
+                    "value_id": "242085",
+                    "value_name": "Sí",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "242085",
+                            "name": "Sí",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "WITH_TOUCH_SCREEN",
+                    "name": "Con pantalla táctil",
+                    "value_id": "242084",
+                    "value_name": "No",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "242084",
+                            "name": "No",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "WITH_USB_PORT",
+                    "name": "Con puerto USB",
+                    "value_id": "242085",
+                    "value_name": "Sí",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "242085",
+                            "name": "Sí",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
+                },
+                {
+                    "id": "WITH_WI_FI",
+                    "name": "Con Wi-Fi",
+                    "value_id": "242085",
+                    "value_name": "Sí",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "242085",
+                            "name": "Sí",
+                            "struct": null
+                        }
+                    ],
+                    "attribute_group_id": "OTHERS",
+                    "attribute_group_name": "Otros"
                 }
-                ]
-            }
             ],
-            "available_quantity": 1,
-            "sold_quantity": 0,
-            "sale_terms": [],
-            "picture_ids": [
-            "780624-MCO46493008273_062021",
-            "782132-MCO46493008270_062021",
-            "827876-MCO46493008271_062021",
-            "636498-MCO46493008272_062021",
-            "946292-MCO46493008269_062021"
+            "warnings": [],
+            "listing_source": "",
+            "variations": [
+                {
+                    "id": 173796612442,
+                    "price": 6442000.00,
+                    "attribute_combinations": [
+                        {
+                            "id": "COLOR",
+                            "name": "Color",
+                            "value_id": "283165",
+                            "value_name": "Gris",
+                            "value_struct": null,
+                            "values": [
+                                {
+                                    "id": "283165",
+                                    "name": "Gris",
+                                    "struct": null
+                                }
+                            ]
+                        }
+                    ],
+                    "available_quantity": 1,
+                    "sold_quantity": 0,
+                    "sale_terms": [],
+                    "picture_ids": [
+                        "780624-MCO46493008273_062021",
+                        "782132-MCO46493008270_062021",
+                        "827876-MCO46493008271_062021",
+                        "636498-MCO46493008272_062021",
+                        "946292-MCO46493008269_062021"
+                    ],
+                    "catalog_product_id": null
+                }
             ],
-            "catalog_product_id": null
+            "status": "active",
+            "sub_status": [],
+            "tags": [
+                "good_quality_picture",
+                "good_quality_thumbnail",
+                "loyalty_discount_eligible",
+                "immediate_payment",
+                "cart_eligible"
+            ],
+            "warranty": null,
+            "catalog_product_id": "MCO14773708",
+            "domain_id": "MCO-ALL_IN_ONE",
+            "parent_item_id": null,
+            "differential_pricing": null,
+            "deal_ids": [
+                "MCO3273",
+                "MCO2990",
+                "MCO3272",
+                "MCO3303",
+                "MCO3269"
+            ],
+            "automatic_relist": false,
+            "date_created": "2021-06-23T17:21:24.000Z",
+            "last_updated": "2022-02-05T00:13:44.440Z",
+            "health": 0.8,
+            "catalog_listing": false,
+            "channels": [
+                "marketplace"
+            ]
         }
-        ],
-        "status": "active",
-        "sub_status": [],
-        "tags": [
-        "good_quality_picture",
-        "good_quality_thumbnail",
-        "loyalty_discount_eligible",
-        "immediate_payment",
-        "cart_eligible"
-        ],
-        "warranty": null,
-        "catalog_product_id": "MCO14773708",
-        "domain_id": "MCO-ALL_IN_ONE",
-        "parent_item_id": null,
-        "differential_pricing": null,
-        "deal_ids": [
-        "MCO3273",
-        "MCO2990",
-        "MCO3272",
-        "MCO3303",
-        "MCO3269"
-        ],
-        "automatic_relist": false,
-        "date_created": "2021-06-23T17:21:24.000Z",
-        "last_updated": "2022-02-05T00:13:44.440Z",
-        "health": 0.8,
-        "catalog_listing": false,
-        "channels": [
-        "marketplace"
-        ]
     }
-}
-
+]

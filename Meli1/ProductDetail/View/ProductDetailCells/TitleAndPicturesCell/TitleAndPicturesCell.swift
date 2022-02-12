@@ -10,23 +10,28 @@ import Kingfisher
 
 class TitleAndPicturesCell: UITableViewCell {
 
+    // MARK: - IBOutlets
     @IBOutlet weak var conditionProductLabel: UILabel!
     @IBOutlet weak var titleProductLabel: UILabel!
-    @IBOutlet weak var sellerLabel: UILabel!
     @IBOutlet weak var productPicturesView: UIView!
     @IBOutlet weak var productPicturesCollectionView: UICollectionView!
     @IBOutlet weak var counterView: UIView!
     @IBOutlet weak var imagesCounterLabel: UILabel!
     
+    // MARK: - Variables
     var pictures: [Picture]?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         self.productPicturesCollectionView.delegate = self
         self.productPicturesCollectionView.dataSource = self
+        self.registerNib()
+        self.counterView.layer.cornerRadius = 10
+    }
+    func registerNib(){
+        /// Pictures Collection Cell nib register
         let productPictureCellNib = UINib(nibName:"ProductImagesCell", bundle: nil)
         productPicturesCollectionView.register(productPictureCellNib, forCellWithReuseIdentifier: "ProductImagesCell")
-        counterView.layer.cornerRadius = 10
     }
 
     func configCell(product: ProductDetailBody){
@@ -38,6 +43,7 @@ class TitleAndPicturesCell: UITableViewCell {
        setCurrentPictureInCounter(index: getCurrentImage())
         
     }
+    
     func setCurrentPictureInCounter(index: Int){
         imagesCounterLabel.text = "\(index) / \(pictures?.count ?? 0)"
     }
@@ -46,16 +52,13 @@ class TitleAndPicturesCell: UITableViewCell {
         
         for cell in productPicturesCollectionView.visibleCells {
             let indexPath = productPicturesCollectionView.indexPath(for: cell)
-            
             return (indexPath?.row ?? 1) + 1
-            
         }
-        
         return 1
-        
     }
     
 }
+// MARK: - UICollectionViewDelegate - UICollectionViewDataSource - UICollectionViewDelegateFlowLayout
 extension TitleAndPicturesCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
      func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -79,6 +82,5 @@ extension TitleAndPicturesCell: UICollectionViewDelegate, UICollectionViewDataSo
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         setCurrentPictureInCounter(index: getCurrentImage())
     }
-
      
  }

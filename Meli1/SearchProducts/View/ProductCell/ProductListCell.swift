@@ -24,15 +24,6 @@ class ProductListCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         favoriteView.layer.cornerRadius = favoriteView.frame.width / 2
-        
-        self.favoriteButton.rx.tap.subscribe(onNext: { [weak self] _ in
-            
-            if self?.favoriteButton.imageView?.image == UIImage(systemName: "suit.heart"){
-                self?.favoriteButton.setImage(UIImage(systemName: "suit.heart.fill"), for: .normal)
-            }else{
-                self?.favoriteButton.setImage(UIImage(systemName: "suit.heart"), for: .normal)
-            }
-        }).disposed(by: DisposeBag())
     }
     
     func configureCell(_ product:ProductModel){
@@ -47,7 +38,14 @@ class ProductListCell: UITableViewCell {
             self.installmentsLabel.isHidden = true
         }
     }
-
+    @IBAction func favoriteButtonAction(_ sender: Any) {
+        if self.favoriteButton.imageView?.image == UIImage(systemName: "suit.heart"){
+            self.favoriteButton.setImage(UIImage(systemName: "suit.heart.fill"), for: .normal)
+        }else{
+            self.favoriteButton.setImage(UIImage(systemName: "suit.heart"), for: .normal)
+        }
+    }
+    
     
     
 }

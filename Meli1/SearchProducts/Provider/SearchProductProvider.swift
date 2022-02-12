@@ -40,27 +40,3 @@ class SearchProductProvider: SearchProductProviderProtocol {
     }
 }
 
-// MARK: - Mock Products Provider
-/// Use this class to get Mock data of products
-class SearchProductProviderMock: SearchProductProviderProtocol {
-    
-    func getProducts(_ parameters: [String : Any]) -> Observable<ResultModel> {
-        
-        return Observable<ResultModel>.create { (observer) -> Disposable in
-            
-            let url = Bundle.main.url(forResource: "ProductsMock", withExtension: "json")
-            do {
-                let decoder = JSONDecoder()
-                decoder.keyDecodingStrategy = .convertFromSnakeCase
-                let jsonData = try Data(contentsOf: url!)
-                let model = try decoder.decode(ResultModel.self, from: jsonData)
-                observer.onNext(model)
-            }catch let error{
-                observer.onError(error)
-            }
-            
-            return Disposables.create {}
-        }
-        
-    }
-}
